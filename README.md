@@ -1,8 +1,10 @@
 <h1> Basic Recursion</h1>
 
 <h3>Video 1</h3>
-<a href=""><img src=""/></a>
+<a href="https://youtu.be/yVdKa8dnKiE"><img src="https://github.com/yogaprasadk/DSA_A_TO_Z_COURSE/assets/174566721/d2111cca-c62c-4b29-a132-041933f9bbbc"/></a>
 <h4>Problem 1 Answer </h4>
+
+<a href="https://bit.ly/3K2epHv">Problem</a>
 
 ```js
 class Solution
@@ -23,6 +25,8 @@ class Solution
 
 <h4>Problem 2 Answer</h4>
 
+<a href="https://bit.ly/3y2BiWz"/>Problem</a>
+
 ```js
 class Solution {
 
@@ -31,6 +35,26 @@ class Solution {
             System.out.print("GFG"+" ");
         }
         
+    }
+}
+```
+<h3>Video 3</h3>
+<a href="https://youtu.be/un6PLygfXrA"><img src="https://github.com/yogaprasadk/DSA_A_TO_Z_COURSE/assets/174566721/3031a7d4-4381-4448-98b3-7c0eb8d6cdc0"/></a>
+<br/>
+<h4>Problem 3 answer</h4>
+
+<a href="https://www.geeksforgeeks.org/problems/print-1-to-n-without-using-loops-1587115620/1">Problem </a>
+
+```js
+class Solution
+{
+    
+  public void printNos(int N)
+    {
+        //Your code here
+        for(int i = 1;i<=N;i++){
+            System.out.print(i+" ");
+        }
     }
 }
 ```
