@@ -80,3 +80,55 @@ class Solution {
         printNos(N -1);   
     }
 }
+```
+
+<h3>Video 5</h3>
+<a href="https://youtu.be/69ZCDFy-OUo"><img src="https://github.com/user-attachments/assets/00c24832-44bc-475e-b03b-c5ae054d0ce4"/></a>
+<br/>
+<h4>Problem 5</h4>
+<a href="https://www.geeksforgeeks.org/problems/sum-of-first-n-terms5843/1">Problem</a>
+
+```js
+class Solution {
+    long sumOfSeries(long n) {
+        // code here
+        if(n == 0){
+            return 0;
+        }
+        return (long) Math.pow(n,3) + sumOfSeries(n-1);
+    }
+}
+```
+<h3>Video 5</h3>
+<a href="https://youtu.be/69ZCDFy-OUo"><img src="https://github.com/user-attachments/assets/00c24832-44bc-475e-b03b-c5ae054d0ce4"/></a>
+<br/>
+<h4>Problem 5</h4>
+<a href="https://www.geeksforgeeks.org/problems/find-all-factorial-numbers-less-than-or-equal-to-n3548/0?problemType=functional&difficulty%255B%255D=-1&page=1&query=problemTypefunctionaldifficulty%255B%255D-1page1">Problem</a>
+
+
+```
+class Solution {
+    static ArrayList<Long> factorialNumbers(long n) {
+        // code here
+            
+            ArrayList<Long> list = new ArrayList<>();
+            long fact = 1;
+            for(long i = 1;i<=n;i++){
+                fact = fact * i;
+                if(fact<=n){
+                    list.add(fact);
+                }
+                else {
+                    break;
+                }
+            }
+            return list;
+            
+    }
+}
+```
+
+
+
+
+
