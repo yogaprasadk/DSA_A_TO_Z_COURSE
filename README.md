@@ -130,7 +130,52 @@ class Solution {
 
 ```
 
+<h1>Bit Manipulation</h1>
+<h3>Power Of 4</h3>
 
+<a href="https://youtu.be/3tQ6iEU50oQ"><img src="https://github.com/user-attachments/assets/308fab56-f43d-4d7a-895c-c09d387fe6b1"></a>
+<br/>
+<h3><a href="https://leetcode.com/problems/power-of-four/solutions/5471830/power-of-4/">Problem</a></h3>
+<p>Algorithm: Brian's Kernighans</p>
 
+```js
+class Solution {
+    public boolean isPowerOfFour(int n) 
+    {
+        if(n==1){
+            return true;
+        }
+        else if(n>1){
+            boolean containssinglebit = (n &(n-1))==0;
+            boolean fourorsixinzerobit = (n%10==4 || n%10==6);
+            return containssinglebit && fourorsixinzerobit;
+        }
+        else{
+            return false;
+        }
+    }
+}
 
+```
+<br/>
+<h3>Power Of 3</h3>
 
+<a href="https://youtu.be/GNb8vSyw-WE"><img src="https://github.com/user-attachments/assets/e7de6d32-2af6-4fa0-be9d-0d434df53eed"></a>
+<br/>
+<h3><a href="https://leetcode.com/problems/power-of-three/">Problem</a></h3>
+
+```js
+
+class Solution {
+    public boolean isPowerOfThree(int n) {
+    if( n < 1) return false;
+    while(n % 3 == 0){
+        n = n / 3;
+        }
+    return n == 1;
+
+    }
+}
+
+```
+```js
