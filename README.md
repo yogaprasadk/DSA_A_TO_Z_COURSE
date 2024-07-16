@@ -195,6 +195,7 @@ public class Main{
 ```
 <h3>Video 7</h3>
 <a href="https://youtu.be/twuC1F6gLI8"><img src="https://github.com/user-attachments/assets/05b8554c-b119-4fac-b1e9-5336888cc5e1"/></a>
+<br/>
 <a href="https://leetcode.com/problems/valid-palindrome/">Problem</a>
 
 ```js
