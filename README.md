@@ -129,7 +129,96 @@ class Solution {
 }
 
 ```
+<h3>Video 6</h3>
+<a href="https://youtu.be/twuC1F6gLI8"><img src="https://github.com/user-attachments/assets/c2050ca3-674e-4e0f-a416-041cadf89e57"/></a>
+<h3>Problem 6</h3>
+<!-- <a href="">Problem</a> -->
+1.Using an extra array
 
+```js 
+public class Main{
+    
+    public static void printarray(int ans[],int size){
+        System.out.println("Array:");
+        for(int i = 0;i<size;i++){
+            System.out.print(ans[i]+" ");
+        }
+    } 
+    
+    public static void reversearr(int arr[],int size){
+        int ans[] = new int[size];{
+            for(int i = size - 1;i>=0;i--){
+                ans[size - i - 1] = arr[i];
+            }
+            printarray(ans,size);
+        }  
+    }
+    public static void main (String[] args) {
+        int arr[] = {2,3,4,5,6};
+        int n = 5;
+        reversearr(arr,n);
+        
+    }
+}
+
+```
+2.recursive Method
+
+```js
+public class Main{
+    public static void main (String[] args) {
+        int arr[] = {1,2,3,4,6,7};
+        int n = 5;
+        revarrusingrec(arr,0,n - 1);
+        printarray(arr,n);
+    }
+    // reverse array using recursion method
+
+    public static void revarrusingrec(int arr[],int startindex,int endindex){
+        if(startindex<endindex){
+            // use swap method
+            int temporary = arr[startindex];
+            arr[startindex] = arr[endindex];
+            arr[endindex] = temporary;
+            revarrusingrec(arr,startindex + 1,endindex - 1);
+        }
+    }
+    
+    // print it
+    public static void printarray(int arr[],int size){
+        System.out.println("Reverse Array:");
+        for(int i = 0;i<size;i++){
+            System.out.print(arr[i]+" ");
+        }
+    }
+}
+```
+<h3>Video 7</h3>
+<a href="https://youtu.be/twuC1F6gLI8"><img src="https://github.com/user-attachments/assets/05b8554c-b119-4fac-b1e9-5336888cc5e1"/></a>
+<a href="https://leetcode.com/problems/valid-palindrome/">Problem</a>
+
+```js
+
+class Solution {
+    public boolean isPalindrome(String s) {
+        s = s.toLowerCase().replaceAll("[^A-Za-z0-9]","");
+        int fwd = 0;
+        int bwd= s.length()-1;
+        while(fwd<=bwd)
+        {
+            if(s.charAt(fwd) != s.charAt(bwd))
+            {
+                return false;
+            }
+            fwd = fwd + 1;
+            bwd = bwd - 1;
+        }
+        return true;
+    }
+}
+
+```
+<br/>
 <h1>Bit Manipulation</h1>
 <h3>Power Of 4</h3>
 
