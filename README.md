@@ -220,6 +220,27 @@ class Solution {
 
 ```
 <br/>
+
+<h3>Video 8</h3>
+<a href=""><img src="https://github.com/user-attachments/assets/72c135ff-007e-410c-815c-e28d383b1f08)"/></a>
+<a href="https://leetcode.com/problems/fibonacci-number/description/">Probelem</a>
+
+```js
+
+class Solution {
+    public int fib(int n) {
+        int sum = 0;
+        int sum1 = 1;
+        for(int i = 0;i<n;i++){
+            int sum2 = sum1 + sum;
+            sum = sum1;
+            sum1 = sum2; 
+        }
+        return sum;
+    }
+}
+
+```
 <h1>Bit Manipulation</h1>
 <h3>Power Of 4</h3>
 
