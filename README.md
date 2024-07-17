@@ -222,8 +222,9 @@ class Solution {
 <br/>
 
 <h3>Video 8</h3>
-<a href=""><img src="https://github.com/user-attachments/assets/72c135ff-007e-410c-815c-e28d383b1f08)"/></a>
-<a href="https://leetcode.com/problems/fibonacci-number/description/">Probelem</a>
+<a href=""><img src="https://github.com/user-attachments/assets/72c135ff-007e-410c-815c-e28d383b1f08"/></a>
+<br/>
+<a href="https://leetcode.com/problems/fibonacci-number/description/">Problem</a>
 
 ```js
 
