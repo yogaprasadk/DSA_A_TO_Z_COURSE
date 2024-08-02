@@ -294,8 +294,213 @@ class Solution {
 <br/>
 <h3>Selection Sort</h3>
 <a href="https://youtu.be/HGk_ypEuS24"><img src="https://github.com/user-attachments/assets/04ff910d-2ab1-4b0d-a2e0-a49514b33fc5"/></a>
-<a href="">Problem</a>
+<br/>
+<a href="https://www.geeksforgeeks.org/problems/selection-sort/1">Problem</a>
+
 <h3>Solution</h3>
 
 ```js
+import java.util.*;
+public class index{
+          public static void main(String[] args) {
+               Scanner S = new Scanner(System.in);
+                int n = 5;
+                int arr[]  = new int[n];
+                for(int i = 0;i<arr.length;i++)
+                {
+                    arr[i] = S.nextInt();
+                }
+                selection_sort(arr,n);
+                for(int i = 0;i<arr.length;i++){
+                    System.out.println(arr[i]+" ");
+                }
+          S.close();
+          }
+
+          public static void selection_sort(int arr[],int n)
+          {
+                    // int i,j,min_index,temp;
+                    for(int i = 0;i<=n-1;i++){
+                              int min_index = i;
+                              for (int j = i+1;j<n;j++) {
+                                       if (arr[j]<arr[min_index]) 
+                                       {
+                                        min_index = j;
+                                       } 
+                              }
+                     int temp = arr[min_index];
+                     arr[min_index] = arr[i];
+                     arr[i] = temp;         
+                    }
+          }
+}
 ```
+
+<h3>Simple solution Using Sort Method</h3>
+
+```js
+class solution
+{
+	int select(int arr[], int n)
+	{
+        // code here such that selectionSort() sorts arr[]
+        return arr[n];
+	}
+	
+	void selectionSort(int arr[], int n)
+	{
+	    //code here
+	    Arrays.sort(arr);
+	    for(int i = 0;i<n;i++){
+	        select(arr,i);
+	    }
+	}
+}
+```
+<br/>
+<h3>Time Complexity for Selection Sort Is O(n2)</h3>
+
+<h3>Bubble Sort</h3>
+
+<a href="https://youtu.be/HGk_ypEuS24"><img src="https://github.com/user-attachments/assets/28978649-fa2f-428c-b5af-72e9c3b4c194"/></a>
+<br/>
+<a href="https://www.geeksforgeeks.org/problems/bubble-sort/1">Problem</a>
+<h3>Solution</h3>
+
+```js
+import java.util.*;
+class solution
+{
+    public static void main(String args[])
+    {
+        Scanner S = new Scanner(System.in);
+        int size = S.nextInt();
+        int arr[] = new int[size];
+        for(int i = 0;i<size;i++){
+            arr[i] = S.nextInt();
+        }
+        bubblesort(arr,size);
+        for(int j = 0;j<arr.length;j++)
+        {
+        System.out.print(arr[j] +" ");
+        }
+    }
+        static void bubblesort(int arr[],int n){
+        for(int i = n - 1;i>=1;i--)
+        {
+            int didswap = 0;
+            for(int j = 0;j<=i - 1;j++)
+            {
+                if(arr[j]>arr[j+ 1]){
+                int temp = arr[j+1];
+                arr[j+1] = arr[j];
+                arr[j] = temp;
+                didswap = 1;
+                }
+            }
+            if(didswap == 0){
+            break;
+            }
+
+        }     
+
+    }
+
+}
+
+```
+<h3>Bubble Sort - Time Complexity: O(n)</h3>
+
+<h3>Simplest Solution using Sort method</h3>
+
+```js
+class solution
+{
+	int bubble(int arr[], int n)
+	{
+        // code here such that bubbleSort() sorts arr[]
+        return arr[n];
+	}
+	
+	void bubbleSort(int arr[], int n)
+	{
+	    //code here
+	    Arrays.sort(arr);
+	    for(int i = 0;i<n;i++){
+	        select(arr,i);
+	    }
+	}
+}
+```
+<h3>Bubble Sort - Time Complexity:O(n2)</h3>
+<br/>
+<h3>Insertion Sort</h3>
+<a href="https://youtu.be/HGk_ypEuS24"><img src="https://github.com/user-attachments/assets/ed45f0f2-5908-4336-b5e7-a64a5a59adc8"/></a>
+<a href="https://www.geeksforgeeks.org/problems/insertion-sort/0?category%5B%5D=Algorithms&page=1&query=category%5B%5DAlgorithmspage1">Problem</a>
+<h3>Solution</h3>
+
+```js
+import java.util.*;
+class solution
+{
+    public static void main(String args[])
+    {    
+        Scanner S = new Scanner(System.in);
+        int size = S.nextInt();
+        int arr[] = new int[size];
+        for(int i = 0;i<size;i++){
+            arr[i] = S.nextInt();
+        }
+        insertionsort(arr,size);
+    }
+    static void insertionsort(int arr[],int size){
+        for(int i = 0;i<arr.length;i++)
+        {
+            int j = i;
+            while(j>0 && arr[j - 1] > arr[j])
+            {
+                int temp = arr[j - 1];
+                arr[j - 1] = arr[j];
+                arr[j] = temp;
+                j--;
+                System.out.print("ret"+" ");
+            }
+        }
+    }
+}
+```
+<h3> Time COmplexity: O(n) </h3>
+
+<h3>Simplest Solution using Sort method</h3>
+
+```js
+class solution
+{
+	int insert(int arr[], int n)
+	{
+        // code here such that InsertionSort sorts arr[]
+        return arr[n];
+	}
+	
+	void Insertionsort(int arr[], int n)
+	{
+	    //code here
+	    Arrays.sort(arr);
+	    for(int i = 0;i<n;i++){
+	        insert(arr,i);
+	    }
+	}
+}
+```
+
+<h3>Insertion Sort - Time Complexity:O(n2)</h3>
+<br/>
+<h3>Merge Sort</h3>
+<a href="https://youtu.be/ogjf7ORKfd8"><img src="https://github.com/user-attachments/assets/e14469c2-57e9-44c6-a3a6-ce313276f4de"/></a>
+<a href="https://www.geeksforgeeks.org/problems/merge-sort/1">Problem</a>
+<br/>
+<h3>Quick Sort</h3>
+<a href="https://youtu.be/WIrA4YexLRQ"><img src="https://github.com/user-attachments/assets/96da6672-7491-45dd-8138-3e41a23f4bc2"/></a>
+<a href="https://www.geeksforgeeks.org/problems/quick-sort/1">Problem</a>
+
+<br/>
