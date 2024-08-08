@@ -504,3 +504,25 @@ class solution
 <a href="https://www.geeksforgeeks.org/problems/quick-sort/1">Problem</a>
 
 <br/>
+<h1>Arrays</h1>
+<br/>
+<h3>Largest element In an array</h3>
+<a href="https://youtu.be/37E9ckMDdTk"><img src="https://github.com/user-attachments/assets/79bc9d21-63dc-44c1-ab7b-ce073da72d58"/></a>
+<a href="https://www.geeksforgeeks.org/problems/largest-element-in-array4009/0">Problem</a>
+
+<h3>Solution</h3>
+
+```js
+class Solution {
+    public static int largest(int n, int[] arr) {
+        // code here
+        int larg = arr[0];
+        for(int i = 0;i<n;i++){
+            if(arr[i]>larg){
+                larg = arr[i];
+            }
+        }
+        return larg;
+    }
+}
+```
