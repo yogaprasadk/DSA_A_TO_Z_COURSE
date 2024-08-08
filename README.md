@@ -435,7 +435,7 @@ class solution
 <h3>Bubble Sort - Time Complexity:O(n2)</h3>
 <br/>
 <h3>Insertion Sort</h3>
-<a href="https://youtu.be/HGk_ypEuS24"><img src="https://github.com/user-attachments/assets/ed45f0f2-5908-4336-b5e7-a64a5a59adc8"/></a>
+<a href="https://youtu.be/HGk_ypEuS24"><img src="https://github.com/user-attachments/assets/ed45f0f2-5908-4336-b5e7-a64a5a59adc8"/></a><br/>
 <a href="https://www.geeksforgeeks.org/problems/insertion-sort/0?category%5B%5D=Algorithms&page=1&query=category%5B%5DAlgorithmspage1">Problem</a>
 <h3>Solution</h3>
 
@@ -496,18 +496,18 @@ class solution
 <h3>Insertion Sort - Time Complexity:O(n2)</h3>
 <br/>
 <h3>Merge Sort</h3>
-<a href="https://youtu.be/ogjf7ORKfd8"><img src="https://github.com/user-attachments/assets/e14469c2-57e9-44c6-a3a6-ce313276f4de"/></a>
+<a href="https://youtu.be/ogjf7ORKfd8"><img src="https://github.com/user-attachments/assets/e14469c2-57e9-44c6-a3a6-ce313276f4de"/></a><br/>
 <a href="https://www.geeksforgeeks.org/problems/merge-sort/1">Problem</a>
 <br/>
 <h3>Quick Sort</h3>
-<a href="https://youtu.be/WIrA4YexLRQ"><img src="https://github.com/user-attachments/assets/96da6672-7491-45dd-8138-3e41a23f4bc2"/></a>
+<a href="https://youtu.be/WIrA4YexLRQ"><img src="https://github.com/user-attachments/assets/96da6672-7491-45dd-8138-3e41a23f4bc2"/></a><br/>
 <a href="https://www.geeksforgeeks.org/problems/quick-sort/1">Problem</a>
 
 <br/>
 <h1>Arrays</h1>
 <br/>
 <h3>Largest element In an array</h3>
-<a href="https://youtu.be/37E9ckMDdTk"><img src="https://github.com/user-attachments/assets/79bc9d21-63dc-44c1-ab7b-ce073da72d58"/></a>
+<a href="https://youtu.be/37E9ckMDdTk"><img src="https://github.com/user-attachments/assets/79bc9d21-63dc-44c1-ab7b-ce073da72d58"/></a><br/>
 <a href="https://www.geeksforgeeks.org/problems/largest-element-in-array4009/0">Problem</a>
 
 <h3>Solution</h3>
