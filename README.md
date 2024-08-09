@@ -527,7 +527,7 @@ class Solution {
 }
 ```
 <h3>Second Largest element in an array (Very Important Interview Question) </h3>
-<a href=""><img src="https://github.com/user-attachments/assets/a3d434d4-7b21-48e8-9e9b-c9f597307c32"></a>
+<a href="https://youtu.be/37E9ckMDdTk"><img src="https://github.com/user-attachments/assets/a3d434d4-7b21-48e8-9e9b-c9f597307c32"></a><br/>
 <a href="https://bit.ly/3pFvBcN">Problem</a><br/>
 <h3>Solution</h3>
 
@@ -555,11 +555,12 @@ class Solution {
 }
 ```
 <h6>Brute Solution</h6>
+1.
 
 ```js
 import java.util.*;
 class solution{
-public static int secondlargest(int arr,int n){
+public static int secondlargest(int arr[],int n){
 int n = arr.length;
 if(n == 0 || n==1){
 return -1;
@@ -569,9 +570,65 @@ int largest = arr[n - 2];
 System.out.println(largest);
 }
 ```
-<h3>Pseudocode</h3>
-* Brute Force Pseudocode
-<img src="https://github.com/user-attachments/assets/b91fde51-a61a-4fd9-921a-c37cfdd030fd"/>
+2.
+
+```js
+import java.util.*;
+public class solution{
+public static int secondlargest(int arr[],int n){
+int firstlargest  = arr[n - 1];
+int seconlrgt = 0;
+for(int i = n - 2;i>=0;i--){
+if(arr[i] != firstlargest){
+      secondlrgt = arr[i];
+      break;
+    }
+ }
+System.out.println(secondlrgt);
+}
+}
+```
+
+<h3>Pseudocode</h3><br/>
+* Brute Force Pseudocode<br/>
+<img src="https://github.com/user-attachments/assets/b91fde51-a61a-4fd9-921a-c37cfdd030fd"/><br/>
+* Better Approach pseudocode <br/>
+<img src="https://github.com/user-attachments/assets/43ea6f23-9a18-4bc4-b2e2-094eb2137e5c"/><br/>
+<h3>Arrays Is Sorted</h3>
+<a href="https://youtu.be/37E9ckMDdTk"><img src="https://github.com/user-attachments/assets/07501111-bbf7-47a3-877f-079b9476c828"/></a>
+<h3><a href="https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/description/">Problem</a></h3>
+<h3>Answer</h3>
+<h6>If Array is sorted and rotated</h6>
+<a href="https://youtu.be/e22ns5G0qKY"><img src="https://github.com/user-attachments/assets/eb8c1bcb-139e-4fa7-9263-5f778ae4e51a" width=800 height=400/></a>
+
+```js
+class Solution {
+    public boolean check(int[] nums) {
+
+     int count  = 0;
+     for(int i = 0;i<nums.length;i++){
+            if(nums[i] > nums[(i+1) % nums.length]){
+                count++;
+            }
+        } 
+        if(count > 1){
+            return false;
+        }  
+        return true;
+    }
+}
+```
 <br/>
-* Better Approach pseudocode
-<img src="https://github.com/user-attachments/assets/43ea6f23-9a18-4bc4-b2e2-094eb2137e5c"/>
+<h6>If array is sorted</h6>
+
+```js
+class Solution {
+    public boolean check(int[] nums) {
+
+     int count  = 0;
+     for(int i = 1;i<nums.length;i++){
+            if(nums[i] > nums[(i+1)])
+		return false; 
+    }
+	return true;
+}
