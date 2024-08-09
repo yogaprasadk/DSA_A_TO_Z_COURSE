@@ -505,8 +505,9 @@ class solution
 
 <br/>
 <h1>Arrays</h1>
-<h3>Largest element In an array</h3>
 <a href="https://youtu.be/37E9ckMDdTk"><img src="https://github.com/user-attachments/assets/79bc9d21-63dc-44c1-ab7b-ce073da72d58"/></a><br/>
+<h3>Largest element In an array</h3>
+<a href="https://youtu.be/37E9ckMDdTk"><img src="https://github.com/user-attachments/assets/5bf4d176-fdee-4673-a98a-9a10a2399b5b"/></a><br/>
 <a href="https://www.geeksforgeeks.org/problems/largest-element-in-array4009/0">Problem</a>
 
 <h3>Solution</h3>
@@ -525,3 +526,52 @@ class Solution {
     }
 }
 ```
+<h3>Second Largest element in an array (Very Important Interview Question) </h3>
+<a href=""><img src="https://github.com/user-attachments/assets/a3d434d4-7b21-48e8-9e9b-c9f597307c32"></a>
+<a href="https://bit.ly/3pFvBcN">Problem</a><br/>
+<h3>Solution</h3>
+
+<h6>using java Collections</h6>
+
+```js
+class Solution {
+    public int print2largest(List<Integer> arr) {
+        // Code Here
+        Collections.sort(arr);
+        int n = arr.size();
+        if(n<2){
+            return -1;
+        }
+        
+        int x = arr.get(n - 1);
+        for(int i = n - 2;i>=0;i--){
+            if(arr.get(i) != x){
+                return arr.get(i);
+            }
+        }
+        return -1;
+        
+    }
+}
+```
+<h6>Brute Solution</h6>
+
+```js
+import java.util.*;
+class solution{
+public static int secondlargest(int arr,int n){
+int n = arr.length;
+if(n == 0 || n==1){
+return -1;
+}
+Arrays.sort(arr);
+int largest = arr[n - 2];
+System.out.println(largest);
+}
+```
+<h3>Pseudocode</h3>
+* Brute Force Pseudocode
+<img src="https://github.com/user-attachments/assets/b91fde51-a61a-4fd9-921a-c37cfdd030fd"/>
+<br/>
+* Better Approach pseudocode
+<img src="https://github.com/user-attachments/assets/43ea6f23-9a18-4bc4-b2e2-094eb2137e5c"/>
