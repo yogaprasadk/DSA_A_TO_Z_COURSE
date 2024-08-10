@@ -632,3 +632,45 @@ class Solution {
     }
 	return true;
 }
+```
+
+<h3>Remove Duplicate Element From Sorted Array</h3>
+
+<a href="https://youtu.be/37E9ckMDdTk"><img src="https://github.com/user-attachments/assets/e8b3b1ab-c5a1-4738-ba68-11ee38132034"/></a>
+<h3><a href="https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/">Problem</a></h3><br/>
+<h3>Solution</h3>
+
+```js
+
+class Solution {
+    public int removeDuplicates(int[] nums) {
+         int len = nums.length;
+         int i = 0;
+            for(int j = 0;j<len;j++){
+                if(nums[j] != nums[i]){
+                    i++;
+                    nums[i] = nums[j];
+                }
+            }
+            return i + 1;
+    }
+}
+```
+<h3>Pseudocode</h3>
+<img src="https://github.com/user-attachments/assets/21c9eb21-8fc5-4b21-bc2b-71c94f8160dd" width=800 height=600/>
+<br/>
+<h3>Time Complexity: O(n)</h3>
+<h3>Space Complexity: O(1)</h3>
+<br/>
+<h3>Rotate an Array</h3>
+<a href="https://leetcode.com/problems/rotate-array/description/"><img src="https://github.com/user-attachments/assets/cb06c428-2ed0-4627-852a-c762bf2fa822"/></a><br/>
+<h3><a href="https://leetcode.com/problems/rotate-array/description/">Problem</a></h3>
+
+```js
+
+
+
+
+
+
+```
