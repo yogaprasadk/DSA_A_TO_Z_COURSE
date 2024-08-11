@@ -505,7 +505,6 @@ class solution
 
 <br/>
 <h1>Arrays</h1>
-<a href="https://youtu.be/37E9ckMDdTk"><img src="https://github.com/user-attachments/assets/79bc9d21-63dc-44c1-ab7b-ce073da72d58"/></a><br/>
 <h3>Largest element In an array</h3>
 <a href="https://youtu.be/37E9ckMDdTk"><img src="https://github.com/user-attachments/assets/5bf4d176-fdee-4673-a98a-9a10a2399b5b"/></a><br/>
 <a href="https://www.geeksforgeeks.org/problems/largest-element-in-array4009/0">Problem</a>
