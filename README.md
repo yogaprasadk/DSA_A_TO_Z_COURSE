@@ -635,7 +635,6 @@ class Solution {
 ```
 
 <h3>Remove Duplicate Element From Sorted Array</h3>
-
 <a href="https://youtu.be/37E9ckMDdTk"><img src="https://github.com/user-attachments/assets/e8b3b1ab-c5a1-4738-ba68-11ee38132034"/></a>
 <h3><a href="https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/">Problem</a></h3>
 <h3>Solution</h3>
@@ -658,12 +657,26 @@ class Solution {
 ```
 <h3>Pseudocode</h3>
 <img src="https://github.com/user-attachments/assets/21c9eb21-8fc5-4b21-bc2b-71c94f8160dd" width=800 height=600/>
-<h3>Time Complexity: O(n)</h3>
-<h3>Space Complexity: O(1)</h3>
-<br/>
-<h3>Rotate an Array</h3>
-<a href="https://leetcode.com/problems/rotate-array/description/"><img src="https://github.com/user-attachments/assets/cb06c428-2ed0-4627-852a-c762bf2fa822"/></a><br/>
-<h3><a href="https://leetcode.com/problems/rotate-array/description/">Problem</a></h3>
+<h5>Time Complexity: O(n) Space Complexity: O(1)</h5>
+<h3>Rotate an Array by 1 place</h3>
+<a href="https://youtu.be/wvcQg43_V8U"><img src="https://github.com/user-attachments/assets/cb06c428-2ed0-4627-852a-c762bf2fa822"/></a><br/>
+
+```js
+class solution{
+public void rotatesinglearray(int arr[],int k){
+int temp  = arr[0];
+for(int i = 1;i<k;i++){
+arr[i - 1] = arr[i];
+	}
+int lastindex = temp;
+return arr;
+}
+```
+<h5>Time Complexity: O(n) Space Complexity: O(1)</h5>
+<h3>Rotate an array by d places</h3>
+<h3><a href="https://youtu.be/wvcQg43_V8U"><img src="https://github.com/user-attachments/assets/75beddf9-efcd-4ebe-9a27-965a01201ded"/></a></h3>
+<h3> <a href="https://leetcode.com/problems/rotate-array/description/">Problem</a></h3>
+<h3>Solution</h3>
 
 ```js
 class Solution {
@@ -687,4 +700,7 @@ class Solution {
     }
 }
 ```
+<h5>Time Complexity: O(n) Space Complexity: O(1)</h5>
+
+
 <a href="https://youtu.be/XJzVC9R5q8Y?si=SYMqRPN463yP2vow"><img src="https://github.com/user-attachments/assets/8623d735-d564-4c8d-8260-fac6d8d9bc98"/></a>
