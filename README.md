@@ -662,14 +662,29 @@ class Solution {
 <h3>Space Complexity: O(1)</h3>
 <br/>
 <h3>Rotate an Array</h3>
-<a href="https://leetcode.com/problems/rotate-array/description/"><img src="https://github.com/user-attachments/assets/cb06c428-2ed0-4627-852a-c762bf2fa822"/></a><br
+<a href="https://leetcode.com/problems/rotate-array/description/"><img src="https://github.com/user-attachments/assets/cb06c428-2ed0-4627-852a-c762bf2fa822"/></a><br/>
 <h3><a href="https://leetcode.com/problems/rotate-array/description/">Problem</a></h3>
 
 ```js
-
-
-
-
-
-
+class Solution {
+    public void rotate(int[] nums, int k) {
+    k = k%nums.length;    
+    // reverse an array
+    reverse(nums,0,nums.length - 1);
+    // reverse an array up to the index k;
+    reverse(nums,0,k - 1);
+    //reverse an array after k up to endindex;
+    reverse(nums,k,nums.length - 1);
+    }
+    public void reverse(int[] nums,int startindex,int endindex){
+        while(startindex<endindex){
+            int temp = nums[startindex];
+            nums[startindex] = nums[endindex];
+            nums[endindex] = temp;
+            startindex++;
+            endindex--;
+        }
+    }
+}
 ```
+<a href="https://youtu.be/XJzVC9R5q8Y?si=SYMqRPN463yP2vow"><img src="https://github.com/user-attachments/assets/8623d735-d564-4c8d-8260-fac6d8d9bc98"/></a>
