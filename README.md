@@ -701,6 +701,37 @@ class Solution {
 }
 ```
 <h5>Time Complexity: O(n) Space Complexity: O(1)</h5>
-
-
 <a href="https://youtu.be/XJzVC9R5q8Y?si=SYMqRPN463yP2vow"><img src="https://github.com/user-attachments/assets/8623d735-d564-4c8d-8260-fac6d8d9bc98"/></a>
+<br/>
+<h3>Moves Zero To end</h3>
+<a href="https://www.youtube.com/watch?v=_OYdPBPOz7U"><img src="https://github.com/user-attachments/assets/32a3d44d-5bd2-461e-8e6c-b53ff95434cd"/></a>
+<h3><a href="https://leetcode.com/problems/move-zeroes/description/">Problem</a></h3>
+<h3>Solution</h3>
+
+```js
+class Solution {
+    public void moveZeroes(int[] nums) {
+        //array length
+        int len = nums.length;
+        // array check for base case;
+        if(len<2){
+            return;
+        }
+        int slow = 0;
+        int fast = 0;
+        while(fast < len){
+            if(nums[fast] != 0){
+                int temp = nums[fast];
+                nums[fast] = nums[slow];
+                nums[slow] = temp;
+                slow++;
+                fast++;
+            }
+            else{
+                fast++;
+            }
+        }
+    }
+}
+```
+<h3>Time Complexity: O(n) and Space Complexity:O(1)</h3>
