@@ -734,3 +734,24 @@ class Solution {
 }
 ```
 <h3>Time Complexity: O(n) and Space Complexity:O(1)</h3>
+<h1>String</h1>
+<h3>Find the Difference</h3>
+<h3><a href="https://leetcode.com/problems/find-the-difference/description/">Problem</a></h3>
+<h4>Solution</h4>
+
+```js
+class Solution {
+    public char findTheDifference(String s, String t) {
+        int total = 0;
+        for(int i = 0;i<t.length();i++){
+            total = total + t.charAt(i);
+        }
+
+        for(int i = 0;i<s.length();i++){
+            total = total - s.charAt(i);
+        }
+
+        return (char)total;
+    }
+}
+```
