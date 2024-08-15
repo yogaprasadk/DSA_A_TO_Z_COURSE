@@ -806,4 +806,34 @@ class Solution {
         return -1; 
     }
 }
+
+```
+
+<h3>Valid Anagram</h3>
+<h3><a href="https://leetcode.com/problems/valid-anagram/description/?envType=study-plan-v2&envId=programming-skills">Problem</a></h3>
+<h4>Solution</h4>
+
+```js
+class Solution {
+    public boolean isAnagram(String s, String t) {
+        // length
+        if(s.length() != t.length())return false;
+
+        //change to charArray
+        char a[] = s.toCharArray();
+        char b[] = t.toCharArray();
+
+        // sort
+        Arrays.sort(a);
+        Arrays.sort(b);
+
+        // check value 
+        for(int i = 0;i<a.length;i++){
+            if(a[i]!=b[i]){
+                return false;
+            }
+        }
+        return true;
+    }
+}
 ```
