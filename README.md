@@ -755,3 +755,36 @@ class Solution {
     }
 }
 ```
+<h3>Merge String Alternatively</h3>
+<h3><a href="https://leetcode.com/problems/merge-strings-alternately/description/?envType=study-plan-v2&envId=programming-skills">Problem</a></h3>
+<h4>Solution</h4>
+
+```js
+class Solution {
+public:
+    string mergeAlternately(string word1, string word2) {
+        //two pointers
+        int i = 0;
+        int j = 0;
+        // empty string
+        string res = "";
+        // size
+        while(i<word1.size() && j<word2.size()){ // size from 0 to length of word
+            res += word1[i++];
+            res += word2[j++];
+        }
+        // i
+        while(i<word1.size()){
+            res += word1[i++];
+        }
+        // j
+        while(j<word2.size()){
+            res += word2[j++];
+        }
+        return res;
+    }
+};
+```
+<h3>Complexity</h3>
+<li>Time complexity:O(N + M)</li>
+<li>Space complexity:O(N + M)</li>
