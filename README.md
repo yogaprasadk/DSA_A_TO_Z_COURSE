@@ -788,3 +788,22 @@ public:
 <h3>Complexity</h3>
 <li>Time complexity:O(N + M)</li>
 <li>Space complexity:O(N + M)</li>
+
+<h3>Find-the-index-of-the-first-occurrence-in-a-string</h3>
+<h3><a href="https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/description/">Problem</a></h3>
+<h4>Solution</h4>
+
+```js
+class Solution {
+    public int strStr(String haystack, String needle) {
+        for(int i = 0;i<haystack.length() - needle.length() + 1;i++){
+            if(haystack.charAt(i) == needle.charAt(0)){
+                if(haystack.substring(i,needle.length() + i).equals(needle)){
+                    return i;
+                }
+            }
+        }
+        return -1; 
+    }
+}
+```
