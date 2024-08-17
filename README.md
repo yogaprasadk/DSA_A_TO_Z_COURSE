@@ -734,6 +734,27 @@ class Solution {
 }
 ```
 <h3>Time Complexity: O(n) and Space Complexity:O(1)</h3>
+<h3>Moves Zero To end</h3>
+<a href="https://youtu.be/wvcQg43_V8U"><img src="https://github.com/user-attachments/assets/0ecd6014-901b-40c1-8da2-6015cad80cf0"/></a>
+<h3><a href="https://www.geeksforgeeks.org/problems/who-will-win-1587115621/1">Problem</a></h3>
+<h3>Solution</h3>
+
+```js
+
+class Solution {
+    static int searchInSorted(int arr[], int N, int K) {
+        for(int i = 0;i<N;i++){
+            if(arr[i] == K){
+                return 1;
+            }
+        }
+        return -1;
+        // Your code here
+    }
+}
+```
+
+<br/>
 <h1>String</h1>
 <h3>Find the Difference</h3>
 <h3><a href="https://leetcode.com/problems/find-the-difference/description/">Problem</a></h3>
