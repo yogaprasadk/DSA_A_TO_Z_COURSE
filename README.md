@@ -734,7 +734,7 @@ class Solution {
 }
 ```
 <h3>Time Complexity: O(n) and Space Complexity:O(1)</h3>
-<h3>Moves Zero To end</h3>
+<h3>Linear Search</h3>
 <a href="https://youtu.be/wvcQg43_V8U"><img src="https://github.com/user-attachments/assets/0ecd6014-901b-40c1-8da2-6015cad80cf0"/></a>
 <h3><a href="https://www.geeksforgeeks.org/problems/who-will-win-1587115621/1">Problem</a></h3>
 <h3>Solution</h3>
@@ -755,6 +755,31 @@ class Solution {
 ```
 <h3>Time Complexity: O(Log N) and Space Complexity:O(1)</h3>
 <br/>
+
+<h3>Union of Sorted Array</h3>
+<a href="https://youtu.be/wvcQg43_V8U"><img src="https://github.com/user-attachments/assets/b04c2e0d-16fa-4d10-b35c-b61a79035f22"/></a>
+<h3><a href="https://www.geeksforgeeks.org/problems/union-of-two-sorted-arrays-1587115621/1">Problem</a></h3>
+<h3>Solution</h3>
+
+```js
+class Solution
+{
+    //Function to return a list containing the union of the two arrays.
+    public static ArrayList<Integer> findUnion(int arr1[], int arr2[], int n, int m)
+    {
+        // add your code here
+        Set<Integer> result = new TreeSet<>();
+        for(int i : arr1){
+            result.add(i);
+        }
+        for(int j : arr2){
+            result.add(j);
+        }
+        return new ArrayList<>(result);
+    }
+}
+```
+<h3>Time Complexity: O(n + m) and Space Complexity:O(n + m)</h3>
 <h1>String</h1>
 <h3>Find the Difference</h3>
 <h3><a href="https://leetcode.com/problems/find-the-difference/description/">Problem</a></h3>
