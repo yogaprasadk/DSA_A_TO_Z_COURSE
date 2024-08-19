@@ -290,6 +290,27 @@ class Solution {
 }
 
 ```
+
+<h3>Single Number</h3>
+<a href="https://youtu.be/dUmaWUPRcLQ"><img src="https://github.com/user-attachments/assets/e818dd13-f3cb-4cba-8db1-6f967ea0d1e4"/></a>
+<h3><a href="https://leetcode.com/problems/single-number/description/">Problem</a></h3>
+<h3>Solution</h3>
+
+```js
+class Solution {
+    public int singleNumber(int[] nums) {
+        int len = nums.length;
+        int value = 0;
+        for(int i = 0;i<len;i++){
+            value = value^nums[i];
+        }
+        return value;
+    }
+}
+			       
+```			       
+<h3>Time complexity: O(N) Space Complexity:O(1)</h3>
+
 <h1>Sorting</h1>
 <br/>
 <h3>Selection Sort</h3>
@@ -799,7 +820,52 @@ class Solution {
 }
 ```
 <h3>Time Complexity: O(N) and Space Complexity:O(1)</h3>
+<h3>Max Consecutive Ones</h3>
+<a href="https://youtu.be/bYWLJb3vCWY"><img src="https://github.com/user-attachments/assets/3e2c464e-afe7-4cb2-967e-81cbb39c9ee5"/></a>
+<h3><a href="https://leetcode.com/problems/max-consecutive-ones/description/">Problem</a></h3>
+
+c++
+```js
+class Solution {
+public:
+    int findMaxConsecutiveOnes(vector<int>& nums) {
+        int maxi = 0;
+        int count  = 0;
+        for(int i = 0;i<nums.size();i++){
+            if(nums[i] == 1){
+                count++;
+                maxi = max(maxi,count); 
+            }
+            else{
+                count  =  0;
+            }
+        }
+        return maxi;
+    }
+};
+```
+java
+
+```js
+class Solution {
+    public int findMaxConsecutiveOnes(int[] nums) {
+     int maxi = 0;
+     int count = 0;
+     for(int i = 0;i<nums.length;i++){
+        if(nums[i] == 1){
+            count++;
+            maxi = Math.max(count,maxi); 
+        }
+        else{
+            count = 0;
+        }
+     } 
+     return maxi;  
+    }
+}
+```
 <h1>String</h1>
+<br/>
 <h3>Find the Difference</h3>
 <h3><a href="https://leetcode.com/problems/find-the-difference/description/">Problem</a></h3>
 <h4>Solution</h4>
