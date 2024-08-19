@@ -776,7 +776,6 @@ class Solution {
 ```
 <h3>Time Complexity: O(Log N) and Space Complexity:O(1)</h3>
 <br/>
-
 <h3>Union of Sorted Array</h3>
 <a href="https://youtu.be/wvcQg43_V8U"><img src="https://github.com/user-attachments/assets/b04c2e0d-16fa-4d10-b35c-b61a79035f22"/></a>
 <h3><a href="https://www.geeksforgeeks.org/problems/union-of-two-sorted-arrays-1587115621/1">Problem</a></h3>
@@ -824,7 +823,8 @@ class Solution {
 <a href="https://youtu.be/bYWLJb3vCWY"><img src="https://github.com/user-attachments/assets/3e2c464e-afe7-4cb2-967e-81cbb39c9ee5"/></a>
 <h3><a href="https://leetcode.com/problems/max-consecutive-ones/description/">Problem</a></h3>
 
-c++
+C++
+
 ```js
 class Solution {
 public:
@@ -844,7 +844,7 @@ public:
     }
 };
 ```
-java
+Java
 
 ```js
 class Solution {
@@ -864,8 +864,8 @@ class Solution {
     }
 }
 ```
+<h3>Time Complexity:O(N) and Space complexity: O(1)</h3>
 <h1>String</h1>
-<br/>
 <h3>Find the Difference</h3>
 <h3><a href="https://leetcode.com/problems/find-the-difference/description/">Problem</a></h3>
 <h4>Solution</h4>
@@ -919,7 +919,6 @@ public:
 <h3>Complexity</h3>
 <li>Time complexity:O(N + M)</li>
 <li>Space complexity:O(N + M)</li>
-
 <h3>Find-the-index-of-the-first-occurrence-in-a-string</h3>
 <h3><a href="https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/description/">Problem</a></h3>
 <h4>Solution</h4>
