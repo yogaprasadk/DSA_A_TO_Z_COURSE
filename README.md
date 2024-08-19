@@ -780,6 +780,25 @@ class Solution
 }
 ```
 <h3>Time Complexity: O(n + m) and Space Complexity:O(n + m)</h3>
+<h3>Find Missing Number in an array</h3>
+<a href="https://youtu.be/bYWLJb3vCWY"><img src="https://github.com/user-attachments/assets/c723caf6-207a-4117-a793-346fe4eb002a"/></a>
+<h3><a href="https://leetcode.com/problems/missing-number/">Problem</a></h3>
+<h3>Solution</h3>
+
+```js
+class Solution {
+    public int missingNumber(int[] nums) {
+       int sums = 0;
+       for(int i = 0;i<nums.length;i++){
+        sums = sums + nums[i];
+       }
+       int actualsum = (nums.length * (nums.length + 1))/2;
+       int res = actualsum - sums;
+       return res; 
+    }
+}
+```
+<h3>Time Complexity: O(N) and Space Complexity:O(1)</h3>
 <h1>String</h1>
 <h3>Find the Difference</h3>
 <h3><a href="https://leetcode.com/problems/find-the-difference/description/">Problem</a></h3>
