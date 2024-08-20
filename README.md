@@ -865,6 +865,13 @@ class Solution {
 }
 ```
 <h3>Time Complexity:O(N) and Space complexity: O(1)</h3>
+<h3>Longest Subarray With Sum K(Positive and negative)</h3>
+<a href="https://youtu.be/frf7qxiN2qU"><img src="https://github.com/user-attachments/assets/01f4512b-0a66-4e6e-9b30-183baaf7a035"/></a>
+<h3><a href="https://www.geeksforgeeks.org/problems/longest-sub-array-with-sum-k0809/1">Problem</a></h3>
+
+```js
+
+```
 <h1>String</h1>
 <h3>Find the Difference</h3>
 <h3><a href="https://leetcode.com/problems/find-the-difference/description/">Problem</a></h3>
