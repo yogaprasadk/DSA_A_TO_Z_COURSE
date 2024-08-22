@@ -872,6 +872,27 @@ class Solution {
 ```js
 
 ```
+<h3>Two Sum</h3>
+<a href="https://youtu.be/UXDSeD9mN-k"><img src="https://github.com/user-attachments/assets/d54b8ea9-b45f-4fa7-b134-a17ccc6b31da"/></a>
+<h3><a href="https://leetcode.com/problems/two-sum/description/">Problem</a></h3>
+
+```js
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        int len = nums.length;
+        int res = 0;
+        for(int row = 0;row<len;row++){
+            for(int col = row + 1;col<len;col++){
+                if(nums[row] + nums[col] == target){
+                        return new int[]{row,col};
+                }
+            }
+        }
+        return new int[]{};
+    }
+}
+```			   
+<h3>Time Complexity: O(N2) and Space Complexity: O(1)</h3>
 <h1>String</h1>
 <h3>Find the Difference</h3>
 <h3><a href="https://leetcode.com/problems/find-the-difference/description/">Problem</a></h3>
