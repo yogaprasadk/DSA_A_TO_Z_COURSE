@@ -893,6 +893,23 @@ class Solution {
 }
 ```			   
 <h3>Time Complexity: O(N2) and Space Complexity: O(1)</h3>
+<h3>Sort 0 1 2</h3>
+<a href="https://youtu.be/tp8JIuCXBaU"><img src="https://github.com/user-attachments/assets/342f8ae2-0037-4254-a06b-a6821219c721"/></a>
+<h3><a href="https://leetcode.com/problems/sort-colors/description/">Problem</a></h3>
+<h3>Solution</h3>
+
+```js
+class Solution {
+    public void sortColors(int[] nums) {
+        int len = nums.length;
+        Arrays.sort(nums);
+        for(int i = 0;i<len;i++){
+            System.out.println(nums[i]);
+        }
+    }
+}
+```
+			       
 <h1>String</h1>
 <h3>Find the Difference</h3>
 <h3><a href="https://leetcode.com/problems/find-the-difference/description/">Problem</a></h3>
