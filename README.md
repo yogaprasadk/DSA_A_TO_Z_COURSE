@@ -909,6 +909,40 @@ class Solution {
     }
 }
 ```
+<h3>Time Complexity: O(NLogN) and Space Complexity: O(1)</h3>
+<h3>majority element</h3>
+<a href="https://youtu.be/bg6r_fgtpMQ"><img src="https://github.com/user-attachments/assets/1209a44b-9ecf-483f-b6e2-b26860511351"/></a>
+<h3><a href="https://leetcode.com/problems/majority-element/description/">Problem</a></h3>
+<h3>Solution</h3>
+
+```js
+class Solution {
+    public int majorityElement(int[] nums) {
+        //arraylength
+        int len = nums.length;
+        //count 
+        int count  = 1;
+        //majority element
+        int majority = nums[0];
+        // check majority
+        for(int i = 0;i<len;i++){
+            if(nums[i] == majority){
+                count = count + 1;
+            }
+            else{
+                count = count - 1;
+                if(count == 0){
+                    majority = nums[i];
+                    count = 1;
+                }
+            }
+        }
+        return majority;
+    }
+}
+```
+<h3>Time Complexity: O(N) and Space Complexity: O(1)</h3>
+
 			       
 <h1>String</h1>
 <h3>Find the Difference</h3>
