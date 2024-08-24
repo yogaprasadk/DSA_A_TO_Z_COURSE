@@ -942,8 +942,34 @@ class Solution {
 }
 ```
 <h3>Time Complexity: O(N) and Space Complexity: O(1)</h3>
+<h3>Maximum Subarray</h3>
+<a href="https://youtu.be/c-wuQj44st4?si=CSnQRFtDNBbGfYZi"><img src="https://github.com/user-attachments/assets/ca1ff950-93cd-4243-908f-1509701ce21c"></a>
+<h3><a href="https://leetcode.com/problems/maximum-subarray/solutions/">Problem</a></h3>
+<h3>Solution</h3>
 
-			       
+ ```js
+ class Solution {
+    public int maxSubArray(int[] nums) {
+        // length
+        int len = nums.length;
+        // sum
+        int sum = 0;
+        // max sum
+        int max_sum = nums[0];
+        // check using kadane Algorithm
+        for(int i = 0;i<len;i++){
+            sum = sum + nums[i];
+            max_sum = Math.max(max_sum,sum); 
+            if(sum<0){
+                sum = 0;
+            }
+        }
+        return max_sum;
+    }
+}
+```
+<h3>Time Complexity: O(N) and Space COmplexity: O(1)</h3>
+
 <h1>String</h1>
 <h3>Find the Difference</h3>
 <h3><a href="https://leetcode.com/problems/find-the-difference/description/">Problem</a></h3>
