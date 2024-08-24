@@ -969,7 +969,31 @@ class Solution {
 }
 ```
 <h3>Time Complexity: O(N) and Space COmplexity: O(1)</h3>
+<h3>Plus ONe</h3>
+<a href="https://www.youtube.com/watch?v=Tcxob-LyBTo"><img src="https://github.com/user-attachments/assets/ae35578d-47c2-4305-88eb-517063762e5c"></a>
+<h3><a href="https://leetcode.com/problems/plus-one/description/">Problem</a></h3>
+<h3>Solution</h3>
 
+```js
+class Solution {
+public:
+    vector<int> plusOne(vector<int>& digits) {
+        for(int i = digits.size() - 1;i>=0;i--){
+            if(digits[i]<9){
+                digits[i]++;
+                return digits;
+            }
+            else{
+                digits[i] = 0;
+            }
+        }
+        digits.push_back(0);
+        digits[0] = 1;
+        return digits;
+    }
+};
+```
+<h3>Time Complexity: O(N) and Space COmplexity: O(1)</h3>
 <h1>String</h1>
 <h3>Find the Difference</h3>
 <h3><a href="https://leetcode.com/problems/find-the-difference/description/">Problem</a></h3>
