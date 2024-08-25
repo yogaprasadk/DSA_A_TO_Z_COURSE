@@ -994,6 +994,26 @@ public:
 };
 ```
 <h3>Time Complexity: O(N) and Space COmplexity: O(1)</h3>
+<h1>Maximum Score in Subarray</h1>
+<h3><a href="https://www.geeksforgeeks.org/problems/max-sum-in-sub-arrays0824/0?category"></a></h3>
+<h3>Solution</h3>
+
+```js
+class Solution {
+    // Function to find pair with maximum sum
+    public int pairWithMaxSum(List<Integer> arr) {
+        // Your code goes here
+        int max = 0;
+        int sum = 0;
+        for(int i = 0;i<arr.size() - 1;i++){
+            sum = arr.get(i) + arr.get(i + 1);
+            max = Math.max(sum,max);
+        }
+        return max;
+    }
+}
+```
+<h3>Time Complexity: O(N) and Space COmplexity: O(1)</h3>
 <h1>String</h1>
 <h3>Find the Difference</h3>
 <h3><a href="https://leetcode.com/problems/find-the-difference/description/">Problem</a></h3>
