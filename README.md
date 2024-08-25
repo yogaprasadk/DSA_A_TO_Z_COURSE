@@ -995,7 +995,7 @@ public:
 ```
 <h3>Time Complexity: O(N) and Space COmplexity: O(1)</h3>
 <h1>Maximum Score in Subarray</h1>
-<h3><a href="https://www.geeksforgeeks.org/problems/max-sum-in-sub-arrays0824/0?category"></a></h3>
+<h3><a href="https://www.geeksforgeeks.org/problems/max-sum-in-sub-arrays0824/0?category">Problem</a></h3>
 <h3>Solution</h3>
 
 ```js
@@ -1014,6 +1014,41 @@ class Solution {
 }
 ```
 <h3>Time Complexity: O(N) and Space COmplexity: O(1)</h3>
+<h3>Buy Stock and Sell - I</h3>
+<a href="https://youtu.be/E2-heUEnZKU?si=o4sdQ5XUYZB1CKSv"><img src="https://github.com/user-attachments/assets/d510163d-244f-4824-ad60-249a852977f0"></a>
+<h3><a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/">Problem</a></h3>
+<h3>Solution</h3>
+
+```js
+class Solution {
+    public int maxProfit(int[] prices) {
+        //at the beginning the minimum is the first place
+        int buy_price = prices[0];
+        
+        // profit
+        int profit = 0;
+        
+    
+        for(int  i = 1;i<prices.length;i++){
+
+           // if current price is less than buy_price
+            if(prices[i]<buy_price){
+                buy_price = prices[i];
+            }
+            
+            else{
+                // else check if we can get better profit
+                int current_profit = prices[i] - buy_price;
+                profit = Math.max(current_profit,profit);
+            }
+            
+        }
+        return profit;
+    }
+}
+```
+<h3>Time Complexity: O(N) and Space COmplexity: O(1)</h3>
+
 <h1>String</h1>
 <h3>Find the Difference</h3>
 <h3><a href="https://leetcode.com/problems/find-the-difference/description/">Problem</a></h3>
