@@ -1074,6 +1074,31 @@ class Solution {
     }
 }
 ```
+<h3>Time Complexity: O(N) and Space COmplexity: O(1)</h3>
+<h3>Subarray sums equals k</h3>
+<h3><a href="https://leetcode.com/problems/subarray-sum-equals-k/">Problem</a></h3>
+
+```js
+class Solution {
+    public int subarraySum(int[] nums, int k) {
+        int n=0;
+        for(int i=0; i<nums.length; i++)
+        {
+            int s=0;
+            for(int j=i; j<nums.length; j++)
+            {
+                s+=nums[j];
+                if(s==k)
+                n++;
+                
+            }
+        }
+        return n;
+    }
+}
+
+```
+<h3>Time Complexity: O(N2) and Space COmplexity: O(1)</h3>
 <h1>String</h1>
 <h3>Find the Difference</h3>
 <h3><a href="https://leetcode.com/problems/find-the-difference/description/">Problem</a></h3>
