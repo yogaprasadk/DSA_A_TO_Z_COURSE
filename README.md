@@ -1048,7 +1048,32 @@ class Solution {
 }
 ```
 <h3>Time Complexity: O(N) and Space COmplexity: O(1)</h3>
+<h3> Rearrange Array Elements by Sign</h3>
+<a href="https://youtu.be/h4aBagy4Uok"><img src="https://github.com/user-attachments/assets/8b851bd3-bc95-45b2-8193-c7f42dc90229"/></a>
+<h3><a href="https://leetcode.com/problems/rearrange-array-elements-by-sign/description/">Problem</a></h3>
+<h3>Solution</h3>
 
+```js
+class Solution {
+    public int[] rearrangeArray(int[] nums) {
+        int len = nums.length;
+        int positive = 0;
+        int negative = 1;
+        int[] fin = new int[len];
+        for(int i = 0;i<len;i++){
+            if(nums[i] < 0){
+                fin[negative] = nums[i];
+                negative = negative + 2;   
+            }
+            else{
+                fin[positive] = nums[i];
+                positive = positive + 2;
+            }
+        }
+        return fin;
+    }
+}
+```
 <h1>String</h1>
 <h3>Find the Difference</h3>
 <h3><a href="https://leetcode.com/problems/find-the-difference/description/">Problem</a></h3>
