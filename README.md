@@ -1127,7 +1127,38 @@ class Solution {
 }
 ```
 <h3>Time Complexity: O(N) and Space COmplexity: O(1)</h3>
+<h3>Longest Consecutive Sequence</h3>
+<
+<h3><a href="https://leetcode.com/problems/longest-consecutive-sequence/description/">Problem</a></h3>
+<a href="https://youtu.be/oO5uLE7EUlM"><img src=""/></a>
+<h3>Solution</h3>
 
+ ```js
+class Solution {
+    public int longestConsecutive(int[] nums) {
+        int n = nums.length;
+        if (n == 0)
+            return 0;
+	int longest = 1;
+        Set<Integer> set = new HashSet<>();
+        for (int i = 0; i < n; i++) {
+            set.add(nums[i]);
+        }
+        for (int i : set) {
+                if (!set.contains(i - 1)) {//check if 'i' is a starting number
+                int cnt = 1;
+                int tempIndex = i;
+                while (set.contains(tempIndex + 1)) {
+                    tempIndex++;
+                    cnt++;
+                }
+                longest = Math.max(longest, cnt);
+            }
+        }
+        return longest;
+}
+```
+<h3>Time Complexity: O(Log*N) and Space COmplexity: O(1)</h3>
 <h1>String</h1>
 <h3>Find the Difference</h3>
 <h3><a href="https://leetcode.com/problems/find-the-difference/description/">Problem</a></h3>
