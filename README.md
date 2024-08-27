@@ -1128,9 +1128,8 @@ class Solution {
 ```
 <h3>Time Complexity: O(N) and Space COmplexity: O(1)</h3>
 <h3>Longest Consecutive Sequence</h3>
-<
 <h3><a href="https://leetcode.com/problems/longest-consecutive-sequence/description/">Problem</a></h3>
-<a href="https://youtu.be/oO5uLE7EUlM"><img src=""/></a>
+<a href="https://youtu.be/oO5uLE7EUlM"><img src="https://github.com/user-attachments/assets/3f6f0d32-3a84-4654-882a-4823b2ad1545"/></a>
 <h3>Solution</h3>
 
  ```js
