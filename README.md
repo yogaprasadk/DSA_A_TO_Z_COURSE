@@ -1099,6 +1099,35 @@ class Solution {
 
 ```
 <h3>Time Complexity: O(N2) and Space COmplexity: O(1)</h3>
+<h3>Array Leaders</h3>
+<h3><a href="https://www.geeksforgeeks.org/problems/leaders-in-an-array-1587115620/1">Problem</a></h3>
+<h3>Solution</h3>
+
+```js
+class Solution {
+    // Function to find the leaders in the array.
+    static ArrayList<Integer> leaders(int n, int arr[]) {
+        // Your code here
+        // new arraylist
+        ArrayList<Integer> list = new ArrayList<>();
+        // max
+        int max = arr[n - 1];
+        // the value from reverse to check max
+        for(int first = n - 1;first>=0;first--)
+        {
+            
+            if(arr[first] >= max) 
+            {
+                list.add(0,arr[first]);
+                max = arr[first];
+            }
+        }
+        return list;
+    }
+}
+```
+<h3>Time Complexity: O(N) and Space COmplexity: O(1)</h3>
+
 <h1>String</h1>
 <h3>Find the Difference</h3>
 <h3><a href="https://leetcode.com/problems/find-the-difference/description/">Problem</a></h3>
