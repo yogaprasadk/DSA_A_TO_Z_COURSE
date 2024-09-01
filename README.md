@@ -1187,6 +1187,107 @@ class Solution {
     }
     ```
 <h3>Time Complexity: O(N*N) and Space COmplexity: O(1)</h3>
+<h3>Spiral Matrix</h3>
+<a href="https://youtu.be/3Zv-s9UUrFM"  target="_blank"><img src="https://github.com/user-attachments/assets/3da5faaa-2443-4205-b344-c28159fe9de6"/></a>
+<h3><a href="https://leetcode.com/problems/spiral-matrix/description/">Problem</a></h3>
+<h3>Solution</h3>
+
+```js
+class Solution {
+    public List<Integer> spiralOrder(int[][] matrix) {
+        int rowlen  = matrix.length;//row length
+        int collen = matrix[0].length; //col length
+        int left = 0;
+        int right = collen - 1;
+        int top = 0;
+        int bottom = rowlen -1;
+        List<Integer> list  = new ArrayList<>();
+        while(top<=bottom && left<=right)
+        {
+            // left to right
+            for(int i = left;i<=right;i++){
+                list.add(matrix[top][i]);
+            }
+            top++;
+
+            // top to bottom
+            for(int i = top;i<=bottom;i++){
+                list.add(matrix[i][right]);
+            } 
+            right--;
+
+
+            // right to left (if still top is need to be less than bottom)
+            if(top <= bottom){
+                for(int i = right;i>=left;i--){
+                    list.add(matrix[bottom][i]);
+                }
+            }
+            bottom--;
+            // bottom to top
+            if(left<= right){
+                for(int i = bottom;i>=top;i--){
+                    list.add(matrix[i][left]);
+                }
+            }
+            left++;
+        }
+        return list;
+    }
+} 
+
+```
+<h3>Time Complexity:O(M * N) and space Complexity: O(1)</h3>
+
+<h3>Set Matrix Zeros</h3>
+<a href="https://youtu.be/N0MgLvceX7M"><img src="![image](https://github.com/user-attachments/assets/a047421e-e541-4f8c-b5cd-a94aa9117a65)"></a>
+<h3><a href="https://leetcode.com/problems/set-matrix-zeroes/">Problem</a></h3>
+<h3>Solution</h3>
+
+```js
+class Solution {
+    public void setZeroes(int[][] matrix) {
+        boolean firstrow = false,firstcolumn = false;
+
+        // set markers in first row and first column
+        for(int i = 0;i<matrix.length;i++)
+        {
+            for(int j = 0;j<matrix[0].length;j++){
+                if(matrix[i][j] == 0){
+                    if(i == 0){
+                       firstrow =  true;
+                    }
+                    if(j == 0){
+                        firstcolumn = true;
+                    }
+                    matrix[0][j] = 0;
+                    matrix[i][0] = 0;
+                }
+            }
+        }
+
+        // replace inner matrix
+        for(int i = 1;i<matrix.length;i++){
+            for(int j = 1;j<matrix[0].length;j++){
+                if(matrix[i][0] == 0 || matrix[0][j] == 0){
+                    matrix[i][j] = 0;
+                }
+            }
+        }
+        if(firstrow){
+            for(int j = 0;j<matrix[0].length;j++){
+                    matrix[0][j] = 0;
+            }
+        }
+        if(firstcolumn){
+            for(int i = 0;i<matrix.length;i++){
+                    matrix[i][0] = 0;
+            }
+        }
+    }
+}
+```
+<h3>Time Complexity:O(M * N) and space Complexity: O(1)</h3>
 <h1>String</h1>
 <h3>Find the Difference</h3>
 <h3><a href="https://leetcode.com/problems/find-the-difference/description/">Problem</a></h3>
