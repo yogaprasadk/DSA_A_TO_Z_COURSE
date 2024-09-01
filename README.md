@@ -1157,7 +1157,36 @@ class Solution {
         return longest;
 }
 ```
-<h3>Time Complexity: O(Log*N) and Space COmplexity: O(1)</h3>
+<h3>Time Complexity: O(Log N) and Space COmplexity: O(1)</h3>
+<h3>Rotate Mtrix by 90 degree</h3>
+<a href="https://youtu.be/Z0R2u6gd3GU"><img src="https://github.com/user-attachments/assets/fdd92184-b1ed-41b9-b3eb-27c9a530084c"/>
+<h3><a href="https://leetcode.com/problems/rotate-image/">Problem</a></h3>
+<h3>Solution</h3>
+	
+	```js
+	class Solution {
+    public void rotate(int[][] matrix) {
+        for(int i = 0;i<matrix.length;i++){
+            for(int j = 0;j<i;j++){
+                // swap the values using two pointer
+                int temporary = matrix[i][j];
+                matrix[i][j] = matrix[j][i];
+                matrix[j][i] = temporary;
+            }
+        }
+
+        for(int i = 0;i<matrix.length;i++){
+            for(int j = 0;j<matrix.length/2;j++){
+                 // swap the values using two pointer with last value of row 
+                int temporary = matrix[i][j];
+                matrix[i][j] = matrix[i][matrix.length-1-j];
+                matrix[i][matrix.length-1-j] = temporary;
+            }
+        }
+    }
+    }
+    ```
+<h3>Time Complexity: O(N*N) and Space COmplexity: O(1)</h3>
 <h1>String</h1>
 <h3>Find the Difference</h3>
 <h3><a href="https://leetcode.com/problems/find-the-difference/description/">Problem</a></h3>
