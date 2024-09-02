@@ -870,7 +870,28 @@ class Solution {
 <h3><a href="https://www.geeksforgeeks.org/problems/longest-sub-array-with-sum-k0809/1">Problem</a></h3>
 
 ```js
-
+class Solution {
+    // Function for finding maximum and value pair
+    public static int lenOfLongSubarr(int A[], int N, int K) {
+        // Complete the function
+        HashMap<Integer,Integer> prevsum = new HashMap<>();
+        int sum = 0,maxlen = 0;
+        for(int i = 0;i<N;i++){
+            sum = sum + A[i];
+            if(sum == K){
+                maxlen = i + 1;
+            }
+            if(!prevsum.containsKey(sum)){
+               prevsum.put(sum, i);
+            }
+            if(prevsum.containsKey(sum - K)){
+              maxlen = Math.max(maxlen, i - prevsum.get(sum - K));
+            }
+        }
+        return maxlen;
+        
+    }
+}
 ```
 <h3>Two Sum</h3>
 <a href="https://youtu.be/UXDSeD9mN-k"><img src="https://github.com/user-attachments/assets/d54b8ea9-b45f-4fa7-b134-a17ccc6b31da"/></a>
@@ -1163,7 +1184,7 @@ class Solution {
 <h3><a href="https://leetcode.com/problems/rotate-image/">Problem</a></h3>
 <h3>Solution</h3>
 	
-	```js
+```js
 	class Solution {
     public void rotate(int[][] matrix) {
         for(int i = 0;i<matrix.length;i++){
@@ -1185,7 +1206,7 @@ class Solution {
         }
     }
     }
-    ```
+```
 <h3>Time Complexity: O(N*N) and Space COmplexity: O(1)</h3>
 <h3>Spiral Matrix</h3>
 <a href="https://youtu.be/3Zv-s9UUrFM"  target="_blank"><img src="https://github.com/user-attachments/assets/3da5faaa-2443-4205-b344-c28159fe9de6"/></a>
