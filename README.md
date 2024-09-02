@@ -1315,23 +1315,7 @@ class Solution {
 <h3>Solution</h3>
 
 ```js
-public void swap(int[] nums,int index,int j)
-        {
-            int temp = nums[index];
-            nums[index] = nums[j];
-            nums[j] = temp;
-        }
-        
-        public void reverse(int nums[],int start)
-        {
-            int end = nums.length - 1;
-            while(start<end)
-            {
-                swap(nums,index,j);
-                start++;
-                end--;
-            }
-        }
+
 
 ```
 <h3>Time Complexity:O(N) and space Complexity: O(1)</h3>
