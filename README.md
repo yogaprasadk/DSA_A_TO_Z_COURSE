@@ -1288,6 +1288,33 @@ class Solution {
 }
 ```
 <h3>Time Complexity:O(M * N) and space Complexity: O(1)</h3>
+<h3>Next Permutation</h3>
+<a href="https://youtu.be/PdNKI82hHKk?si=bktsS0_HAs5iFph0"><img src="https://github.com/user-attachments/assets/63f94f3c-da2e-4759-b169-e9c33a13b946"></a>
+<h3><a href="https://leetcode.com/problems/next-permutation/">Problem</a>
+<h3>Solution</h3>
+
+```js
+public void swap(int[] nums,int index,int j)
+        {
+            int temp = nums[index];
+            nums[index] = nums[j];
+            nums[j] = temp;
+        }
+        
+        public void reverse(int nums[],int start)
+        {
+            int end = nums.length - 1;
+            while(start<end)
+            {
+                swap(nums,index,j);
+                start++;
+                end--;
+            }
+        }
+
+```
+<h3>Time Complexity:O(N) and space Complexity: O(1)</h3>
+
 <h1>String</h1>
 <h3>Find the Difference</h3>
 <h3><a href="https://leetcode.com/problems/find-the-difference/description/">Problem</a></h3>
