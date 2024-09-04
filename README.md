@@ -1363,7 +1363,28 @@ class Solution {
 
 ```
 <h3>Time Complexity:O(N) and space Complexity: O(1)</h3>
+<h3>Pascal Triangle</h3>
+<a href="https://youtu.be/bR7mQgwQ_o8"><img src="https://github.com/user-attachments/assets/12f52449-a2f8-4997-98c5-f87cf7363c9d"/></a>
+<h3><a href="https://leetcode.com/problems/pascals-triangle/">Problem</a></h3>
+<h3>Solution</h3>
 
+```js
+function pascalTriangle(n) {
+    let ans = 1;
+    console.log(ans + " "); // printing 1st element
+  
+    //Printing the rest of the part:
+    for (let i = 1; i < n; i++) {
+      ans = ans * (n - i);
+      ans = ans / i;
+      console.log(ans + " ");
+    }
+    console.log("n");
+}
+const n = 5;
+pascalTriangle(n);
+```
+<h3>Time Complexity:O(N) and space Complexity: O(1)</h3
 <h1>String</h1>
 <h3>Find the Difference</h3>
 <h3><a href="https://leetcode.com/problems/find-the-difference/description/">Problem</a></h3>
