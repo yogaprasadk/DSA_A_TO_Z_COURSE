@@ -1512,6 +1512,8 @@ public class Solution {
     }
 }
 ```
+<h3>Time Complexity:O(N2) and space Complexity: O(N)</h3
+
 <h1>String</h1>
 <h3>Find the Difference</h3>
 <h3><a href="https://leetcode.com/problems/find-the-difference/description/">Problem</a></h3>
