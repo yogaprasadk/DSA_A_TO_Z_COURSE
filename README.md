@@ -513,21 +513,120 @@ class solution
 	}
 }
 ```
-
 <h3>Insertion Sort - Time Complexity:O(n2)</h3>
 <br/>
 <h3>Merge Sort</h3>
-<a href="https://youtu.be/ogjf7ORKfd8"><img src="https://github.com/user-attachments/assets/e14469c2-57e9-44c6-a3a6-ce313276f4de"/></a><br/>
-<a href="https://www.geeksforgeeks.org/problems/merge-sort/1">Problem</a>
+<a href="https://youtu.be/ogjf7ORKfd8"><img src="https://github.com/user-attachments/assets/e14469c2-57e9-44c6-a3a6-ce313276f4de"/></a>
+<h3><a href="https://www.geeksforgeeks.org/problems/merge-sort/1">Problem</a></h3>
+<h3>SOlution</h3>
+
+```js
+ public static void mergeSort(int[] arr, int numberOfElements) {
+    if (numberOfElements < 2) {
+      return;
+    }
+
+    // Find the middle position and create left and right partitions
+    int mid = numberOfElements/2;
+    int[] leftArr = new int[mid];
+    int[] rightArr = new int[numberOfElements - mid];
+
+    // Fill up the partitions
+    for (int i = 0; i < mid; i++) {
+      leftArr[i] = arr[i];
+    }
+    
+    for (int i = mid; i < numberOfElements; i++) {
+      rightArr[i- mid] = arr[i];
+    }
+
+    // Apply merge sort on the left parition
+    mergeSort(leftArr, mid);
+
+    // Apply merge sort on the right partition
+    mergeSort(rightArr, numberOfElements  - mid);
+
+    // Finally merge the partitions
+    merge(arr, leftArr, rightArr, mid, numberOfElements - mid);
+  }
+
+  private static void merge(int[] arr, int[] leftArr, int[] rightArr, int left, int right) {
+    int i = 0, j = 0, k = 0;
+
+    // Merge arrays based on the smaller values
+    while (i < left && j < right) {
+      if (leftArr[i] <= rightArr[j]) {
+        arr[k++] = leftArr[i++];
+      }
+      else {
+        arr[k++] = rightArr[j++];
+      }
+    }
+
+    // Fill out remaining values if any
+    while (i < left) {
+      arr[k++] = leftArr[i++];
+    }
+    while (j < right) {
+      arr[k++] = rightArr[j++];
+    }
+  }
+```
 <br/>
 <h3>Quick Sort</h3>
-<a href="https://youtu.be/WIrA4YexLRQ"><img src="https://github.com/user-attachments/assets/96da6672-7491-45dd-8138-3e41a23f4bc2"/></a><br/>
-<a href="https://www.geeksforgeeks.org/problems/quick-sort/1">Problem</a>
+<a href="https://youtu.be/WIrA4YexLRQ"><img src="https://github.com/user-attachments/assets/a82360b9-961f-4fbe-a9e1-c2e99f00e33f"/></a>
+<h3><a href="https://www.geeksforgeeks.org/problems/quick-sort/1">Problem</a></h3>
+<h3>Solution</h3>
+
+```js
+ public static void quickSort(int[] arr, int begin, int end) {
+
+    if (begin < end) {
+      // Find the partition
+      int partition = findPartition(arr, begin, end);
+
+      // Do quick sort on the left part
+      quickSort(arr, begin, partition - 1);
+
+      // Do quick sort on the right part
+      quickSort(arr, partition + 1, end);
+    }
+  }
+
+  private static int findPartition(int[] arr, int begin, int end) {
+
+    // Taking last element as pivot element
+    int pivot = arr[end];
+
+    int i = (begin - 1); // index of smaller element
+
+    for (int j = begin; j < end; j++) {
+      // If current element is smaller than the pivot
+      if (arr[j] < pivot) {
+        i++;
+
+        // swap arr[i] and arr[j]
+        swap(arr, i, j);
+      }
+    }
+
+    // swap arr[i+1] and arr[high] (or pivot)
+    swap(arr, i + 1, end);
+
+    return i + 1;
+  }
+
+  private static void swap(int[] arr, int i, int j) {
+    int swapTemp = arr[i];
+    arr[i] = arr[j];
+    arr[j] = swapTemp;
+  }
+```
 
 <br/>
 <h1>Arrays</h1>
 <h3>Largest element In an array</h3>
-<a href="https://youtu.be/37E9ckMDdTk"><img src="https://github.com/user-attachments/assets/5bf4d176-fdee-4673-a98a-9a10a2399b5b"/></a><br/>
+<a href="https://youtu.be/2SRzQEOaLYw?si=ISJm3Acvv8qRRR_6"><img src="https://github.com/user-attachments/assets/5bf4d176-fdee-4673-a98a-9a10a2399b5b"/></a>
 <a href="https://www.geeksforgeeks.org/problems/largest-element-in-array4009/0">Problem</a>
 
 <h3>Solution</h3>
@@ -1385,6 +1484,34 @@ const n = 5;
 pascalTriangle(n);
 ```
 <h3>Time Complexity:O(N) and space Complexity: O(1)</h3
+<h3>Majority element n/3 times</h3>
+<a href="https://youtu.be/vwZj1K0e9U8"><img src="https://github.com/user-attachments/assets/556f0f36-623d-4c4c-89d4-f1ebac60c127"/></a>
+<h3><a href="https://leetcode.com/problems/majority-element-ii/description/">Problem</a></h3>
+<h3>Solution</h3>
+
+```js
+public class Solution {
+    public List<Integer> majorityElement(int[] nums) {
+        List<Integer> result = new ArrayList<>();
+        Set<Integer> uniqueNums = new HashSet<>();
+        for (int num : nums) {
+            uniqueNums.add(num);
+        }
+        for (int num : uniqueNums) {
+            int count = 0;
+            for (int n : nums) {
+                if (n == num) {
+                    count++;
+                }
+            }
+            if (count > nums.length / 3) {
+                result.add(num);
+            }
+        }
+        return result;
+    }
+}
+```
 <h1>String</h1>
 <h3>Find the Difference</h3>
 <h3><a href="https://leetcode.com/problems/find-the-difference/description/">Problem</a></h3>
