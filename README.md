@@ -1483,7 +1483,8 @@ function pascalTriangle(n) {
 const n = 5;
 pascalTriangle(n);
 ```
-<h3>Time Complexity:O(N) and space Complexity: O(1)</h3
+<h3>Time Complexity:O(N) and space Complexity: O(1)</h3>
+
 <h3>Majority element n/3 times</h3>
 <a href="https://youtu.be/vwZj1K0e9U8"><img src="https://github.com/user-attachments/assets/556f0f36-623d-4c4c-89d4-f1ebac60c127"/></a>
 <h3><a href="https://leetcode.com/problems/majority-element-ii/description/">Problem</a></h3>
@@ -1512,10 +1513,10 @@ public class Solution {
     }
 }
 ```
-<h3>Time Complexity:O(N2) and space Complexity: O(N)</h3
+<h3>Time Complexity:O(N2) and space Complexity: O(N)
 <h3>Three Sum (Most Asked interview Problem)</h3>
 <a href="https://www.youtube.com/watch?v=cRBSOz49fQk"><img src="https://github.com/user-attachments/assets/5bc5bd6a-568b-49d9-a78d-5261c60b19f6"/></a>
-<h3><a href="https://leetcode.com/problems/3sum/description/"></a>Problem</h3>
+<h3><a href="https://leetcode.com/problems/3sum/description/">Problem</a></h3>
 <h3>Solution</h3>
 
 ```js
