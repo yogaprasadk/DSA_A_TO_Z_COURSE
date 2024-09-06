@@ -1513,7 +1513,60 @@ public class Solution {
 }
 ```
 <h3>Time Complexity:O(N2) and space Complexity: O(N)</h3
+<h3>Three Sum (Most Asked interview Problem)</h3>
+<a href="https://www.youtube.com/watch?v=cRBSOz49fQk"><img src="https://github.com/user-attachments/assets/5bc5bd6a-568b-49d9-a78d-5261c60b19f6"/></a>
+<h3><a href="https://leetcode.com/problems/3sum/description/"></a>Problem</h3>
+<h3>Solution</h3>
 
+```js
+class Solution {
+    public List<List<Integer>> threeSum(int[] nums) {
+        
+        // check list length or null
+        if(nums == null || nums.length < 3){
+            return new ArrayList<>();
+        }
+
+        // sort
+        Arrays.sort(nums);
+        // set 
+        Set<List<Integer>> result = new HashSet<>();
+        
+        // using two pointers 
+        for(int i = 0;i<nums.length - 2;i++)
+        {
+            int left  = i + 1;
+            int right = nums.length - 1;
+            while(left <  right)
+            {
+                // sum nums values
+
+                int sum = nums[i] + nums[left] + nums[right];
+
+                //if sum is equal to zero
+                if(sum == 0)
+                {
+                    result.add(Arrays.asList(nums[i],nums[left],nums[right]));
+                    left++;
+                    right--;
+                }
+
+                else if(sum < 0)
+                {
+                    left++;
+                }
+
+                else
+                {
+                    right--;
+                }
+            }
+        }
+        return new ArrayList<>(result);
+    }
+}
+```
+<h3>Time Complexity:O(N2) and O(N)</h3>
 <h1>String</h1>
 <h3>Find the Difference</h3>
 <h3><a href="https://leetcode.com/problems/find-the-difference/description/">Problem</a></h3>
