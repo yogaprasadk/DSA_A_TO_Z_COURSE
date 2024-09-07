@@ -1569,7 +1569,7 @@ class Solution {
 ```
 <h3>Time Complexity:O(N2) and O(N)</h3>
 <h3>Four SUm</h3>
-<h3><a href="https://leetcode.com/problems/4sum/"></a>Problem</h3>
+<h3><a href="https://leetcode.com/problems/4sum/">Problem</a></h3>
 <h3>Solution</h3>
 
 ```js
