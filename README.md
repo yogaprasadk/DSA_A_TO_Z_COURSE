@@ -1613,6 +1613,40 @@ class Solution {
     }
 }
 ```
+<h3>Maximum Product SubArray</h3>
+<a href="https://youtu.be/Y6B-7ZctiW8?si=-jLQfsLLwQQ7aGUf"><img src="https://github.com/user-attachments/assets/4a5124fa-304d-41a2-97d4-f1805fd49ed6"/></a>
+<h3><a href="https://leetcode.com/problems/maximum-product-subarray/description/">Problem</a></h3>
+<h3>Solution</h3>
+
+```js
+class Solution {
+    public int maxProduct(int[] nums) {
+        int len = nums.length;
+        int leftproduct = 1;
+        int rightproduct = 1;
+        int ans = nums[0];
+        for(int i = 0;i<len;i++){
+            if(leftproduct == 0){
+                leftproduct = 1;   
+            }
+            if(rightproduct == 0){
+                rightproduct = 1;
+            }
+
+            //leftproduct
+            leftproduct = leftproduct * nums[i];
+
+            //rightproduct
+            rightproduct = rightproduct * nums[len - 1 - i];
+
+            ans = Math.max(ans,Math.max(leftproduct,rightproduct)); 
+        }
+        return ans;
+    }
+}
+```
+
+<h3>Time Complexity:O(N) and Space COmplexity: O(1)</h3>
 <h1>String</h1>
 <h3>Find the Difference</h3>
 <h3><a href="https://leetcode.com/problems/find-the-difference/description/">Problem</a></h3>
