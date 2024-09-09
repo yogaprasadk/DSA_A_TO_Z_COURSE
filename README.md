@@ -1645,8 +1645,20 @@ class Solution {
     }
 }
 ```
-
 <h3>Time Complexity:O(N) and Space COmplexity: O(1)</h3>
+<h3>Merge Two SOrted Array</h3>
+<a href="https://youtu.be/0H6038ldSyg?si=-UleC8dOHm1KzjvH"><img src="https://github.com/user-attachments/assets/bf2edf0b-2c36-43d4-8a6a-94e2f95ab9fe"/></a>
+<h3><a href="https://leetcode.com/problems/merge-sorted-array/description/">Problem</a></h3>
+<h3>Solution</h3>
+
+```js
+ for (int j = 0, i = m; j < n; j++) {
+            nums1[i] = nums2[j];
+            i++;
+        }
+        Arrays.sort(nums1);
+```
+<h3>Time Complexity:O(N lOgN) and SpaceCOmplexity: O(1)</h3>
 <h1>String</h1>
 <h3>Find the Difference</h3>
 <h3><a href="https://leetcode.com/problems/find-the-difference/description/">Problem</a></h3>
