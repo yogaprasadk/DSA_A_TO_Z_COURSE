@@ -1659,6 +1659,34 @@ class Solution {
         Arrays.sort(nums1);
 ```
 <h3>Time Complexity:O(N lOgN) and SpaceCOmplexity: O(1)</h3>
+<h3>Longest subarray with 0 sum </h3>
+<a href="https://youtu.be/Bne92MpRieE?si=N43m-QtsKZbsMu69"><img src="![Uploading image.png…]()"/></a>
+<h3><a href="https://www.geeksforgeeks.org/problems/largest-subarray-with-0-sum/1?category[]=Hash&company[]=Amazon&page=1&query=category[]Hashcompany[]Amazonpage1company[]Amazoncategory[]Hash">Problem</a></h3>
+<h3>Solution</h3>
+
+```js
+import java.util.HashMap;
+
+class Solution {
+    public int maxLen(int[] arr, int n) {
+        // Your code here
+        HashMap<Integer, Integer> mp = new HashMap<>();
+        int sum = 0;
+        int ans = 0;
+        mp.put(0, -1);
+        for (int i = 0; i < n; i++) {
+            sum += arr[i];
+            if (mp.containsKey(sum)) {
+                ans = Math.max(ans, i - mp.get(sum));
+            } else {
+                mp.put(sum, i);
+            }
+        }
+        return ans;
+    }
+}
+```
+<h3>Time Complexity: O(n) and Space Complexity: o(n)</h3>
 <h1>String</h1>
 <h3>Find the Difference</h3>
 <h3><a href="https://leetcode.com/problems/find-the-difference/description/">Problem</a></h3>
