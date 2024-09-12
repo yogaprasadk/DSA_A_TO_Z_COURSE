@@ -1660,7 +1660,7 @@ class Solution {
 ```
 <h3>Time Complexity:O(N lOgN) and SpaceCOmplexity: O(1)</h3>
 <h3>Longest subarray with 0 sum </h3>
-<a href="https://youtu.be/Bne92MpRieE?si=N43m-QtsKZbsMu69"><img src="![Uploading image.png…]()"/></a>
+<a href="https://youtu.be/Bne92MpRieE?si=N43m-QtsKZbsMu69"><img src="https://github.com/user-attachments/assets/9d652e00-0933-4d27-b1a1-e155a3182935"/></a>
 <h3><a href="https://www.geeksforgeeks.org/problems/largest-subarray-with-0-sum/1?category[]=Hash&company[]=Amazon&page=1&query=category[]Hashcompany[]Amazonpage1company[]Amazoncategory[]Hash">Problem</a></h3>
 <h3>Solution</h3>
 
