@@ -1687,6 +1687,12 @@ class Solution {
 }
 ```
 <h3>Time Complexity: O(n) and Space Complexity: o(n)</h3>
+<h1>Binary Search</h1>
+<h3>Introduction</h3>
+<a href="https://youtu.be/MHf6awe89xw"><img src="https://github.com/user-attachments/assets/02410bb3-8cd9-428c-81dd-dc6d47abe6c5"/></a>
+<h3><a href="">Problem</a></h3>
+<h3>Solution</h3>
+<h3>TIme Complexit:O(Log N) and Space Complexity: O(1)</h3>
 <h1>String</h1>
 <h3>Find the Difference</h3>
 <h3><a href="https://leetcode.com/problems/find-the-difference/description/">Problem</a></h3>
