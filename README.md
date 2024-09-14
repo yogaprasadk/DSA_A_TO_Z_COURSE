@@ -1715,7 +1715,7 @@ class Solution {
 <h3><a href="https://www.geeksforgeeks.org/problems/floor-in-a-sorted-array-1587115620/1?track=DSASP-Searching&amp%253BbatchId=154">Problem</a></h3>
 <h3>Solution</h3>
 	
-	```js
+  ```js
 
 	class Solution {
 
@@ -1743,7 +1743,7 @@ class Solution {
 <a href="https://youtu.be/6zhGS79oQ4k"><img src="https://github.com/user-attachments/assets/201d7b3e-a1e8-4cc8-b59c-509ba0122557"/></a>
 <h3>Solution</h3>
 	
-	```js
+ ```js
 
 	class Solution {
 
@@ -1772,7 +1772,6 @@ class Solution {
 <a href="https://youtu.be/6zhGS79oQ4k"><img src="https://github.com/user-attachments/assets/201d7b3e-a1e8-4cc8-b59c-509ba0122557"/></a>
 <h3><a href="https://leetcode.com/problems/search-insert-position/description/">Problem</a></h3>
 <h3>Solution</h3>
-	
 	```js
 
 	class Solution {
