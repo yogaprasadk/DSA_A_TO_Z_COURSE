@@ -1737,7 +1737,7 @@ class Solution {
         return ans;
        }
     }
-    ```
+  ```
 <h3>Time Complexity:O(Log2 N)and spcae complexity: O(1)</h3>
 <h3>Upper Bound Bound</h3>
 <a href="https://youtu.be/6zhGS79oQ4k"><img src="https://github.com/user-attachments/assets/201d7b3e-a1e8-4cc8-b59c-509ba0122557"/></a>
@@ -1765,14 +1765,15 @@ class Solution {
         return ans;
        }
     }
-    ```
-    
+ ```
+   
 <h3>Time Complexity:O(Log2 N)and space complexity: O(1)</h3>
 <h3>Search Insert Position</h3>
 <a href="https://youtu.be/6zhGS79oQ4k"><img src="https://github.com/user-attachments/assets/201d7b3e-a1e8-4cc8-b59c-509ba0122557"/></a>
 <h3><a href="https://leetcode.com/problems/search-insert-position/description/">Problem</a></h3>
 <h3>Solution</h3>
-	```js
+
+```js
 
 	class Solution {
 
@@ -1794,7 +1795,7 @@ class Solution {
         return ans;
        }
     }
-    ```
+```
 <h3>Time Complexity:O(Log2 N)and spcae complexity: O(1)</h3>
 
 <h1>String</h1>
