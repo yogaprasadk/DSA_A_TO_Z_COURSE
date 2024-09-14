@@ -1690,9 +1690,114 @@ class Solution {
 <h1>Binary Search</h1>
 <h3>Introduction</h3>
 <a href="https://youtu.be/MHf6awe89xw"><img src="https://github.com/user-attachments/assets/02410bb3-8cd9-428c-81dd-dc6d47abe6c5"/></a>
-<h3><a href="">Problem</a></h3>
+<h3><a href="https://leetcode.com/problems/binary-search/">Problem</a></h3>
 <h3>Solution</h3>
+
+```js
+    public static int binarySearch(int[] nums, int target) {
+        int n = nums.length; //size of the array.
+        int low = 0, high = n - 1;
+
+        // Perform the steps:
+        while (low <= high) {
+            int mid = (low + high) / 2;
+            if (nums[mid] == target) return mid;
+            else if (target > nums[mid]) low = mid + 1;
+            else high = mid - 1;
+        }
+        return -1;
+    }
+} 
+```
 <h3>TIme Complexit:O(Log N) and Space Complexity: O(1)</h3>
+<h3>Lower Bound</h3>
+<a href="https://youtu.be/6zhGS79oQ4k"><img src="https://github.com/user-attachments/assets/201d7b3e-a1e8-4cc8-b59c-509ba0122557"/></a>
+<h3><a href="https://www.geeksforgeeks.org/problems/floor-in-a-sorted-array-1587115620/1?track=DSASP-Searching&amp%253BbatchId=154">Problem</a></h3>
+<h3>Solution</h3>
+	
+	```js
+
+	class Solution {
+
+    // Function to find floor of x
+    // arr: input array
+    // n is the size of array
+    static int findFloor(long arr[], int n, long x) {
+       int low=0,high=arr.length-1,ans=-1;
+        while(low <= high){
+            int mid=(low+high)/2;
+            if(arr[mid] == x) return mid;
+            else if(arr[mid] <= x){
+                ans = mid;
+                low=mid+1;
+            }else{
+                high=mid-1;
+            }
+        }
+        return ans;
+       }
+    }
+    ```
+<h3>Time Complexity:O(Log2 N)and spcae complexity: O(1)</h3>
+<h3>Upper Bound Bound</h3>
+<a href="https://youtu.be/6zhGS79oQ4k"><img src="https://github.com/user-attachments/assets/201d7b3e-a1e8-4cc8-b59c-509ba0122557"/></a>
+<h3>Solution</h3>
+	
+	```js
+
+	class Solution {
+
+    // Function to find floor of x
+    // arr: input array
+    // n is the size of array
+    static int findFloor(long arr[], int n, long x) {
+       int low=0,high=arr.length-1,ans=-1;
+        while(low <= high){
+            int mid=(low+high)/2;
+            if(arr[mid] == x) return mid;
+            else if(arr[mid] < x){
+                ans = mid;
+                low=mid+1;
+            }else{
+                high=mid-1;
+            }
+        }
+        return ans;
+       }
+    }
+    ```
+    
+<h3>Time Complexity:O(Log2 N)and space complexity: O(1)</h3>
+<h3>Search Insert Position</h3>
+<a href="https://youtu.be/6zhGS79oQ4k"><img src="https://github.com/user-attachments/assets/201d7b3e-a1e8-4cc8-b59c-509ba0122557"/></a>
+<h3><a href="https://leetcode.com/problems/search-insert-position/description/">Problem</a></h3>
+<h3>Solution</h3>
+	
+	```js
+
+	class Solution {
+
+    // Function to find floor of x
+    // arr: input array
+    // n is the size of array
+    static int findFloor(long arr[], int n, long x) {
+       int low=0,high=arr.length-1,ans=-1;
+        while(low <= high){
+            int mid=(low+high)/2;
+            if(arr[mid] == x) return mid;
+            else if(arr[mid] <= x){
+                ans = mid;
+                low=mid+1;
+            }else{
+                high=mid-1;
+            }
+        }
+        return ans;
+       }
+    }
+    ```
+<h3>Time Complexity:O(Log2 N)and spcae complexity: O(1)</h3>
+
 <h1>String</h1>
 <h3>Find the Difference</h3>
 <h3><a href="https://leetcode.com/problems/find-the-difference/description/">Problem</a></h3>
