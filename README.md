@@ -1794,7 +1794,95 @@ class Solution {
 }
 ```
 <h3>Time Complexity:O(Log2 N)and spcae complexity: O(1)</h3>
+<h3>First and Last Occurence of a sorted array</h3>
+<a href="https://youtu.be/hjR1IYVx9lY"><img src="https://github.com/user-attachments/assets/9af1364e-f0ea-403d-b3d4-655621a9b2df"/></a>
+<h3><a href="https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/">Problem</a></h3>
+<h3>Solution</h3>
 
+```js
+class Solution {
+    public int[] searchRange(int[] nums, int target) {
+    // first
+            int first = firstoccurence(nums,target);
+    // last
+            int last  =  lastoccurence(nums,target);
+    
+    return new int[]{first,last};
+    }
+
+    public static int firstoccurence(int[] nums,int target){
+
+
+            int low = 0;
+            int high = nums.length - 1;
+            
+            int first = -1;
+            
+            while(low<=high){
+                int mid = (low + high)/2;
+                if(nums[mid] == target){
+                    first = mid;
+                    high = mid - 1;
+                }
+                else if(nums[mid]<target){
+                    low = mid + 1;
+                }
+                else{
+                    high = mid - 1;
+                }
+            }
+        return first;
+    }
+
+    public static int lastoccurence(int[] nums,int target){
+
+
+            int low = 0;
+            int high = nums.length - 1;
+            
+            int last = -1;
+            
+            while(low<=high){
+                int mid = (low + high)/2;
+                if(nums[mid] == target){
+                    last = mid;
+                    low = mid + 1;
+                }
+                else if(nums[mid]<target){
+                    low = mid + 1;
+                }
+                else{
+                    high = mid - 1;
+                }
+            }
+        return last;
+    }
+}
+```
+<h3>Time Complexity :O(Log N) and Space Complexity:O(1)</h3>
+<h3>Number of occurences</h3>
+<a href="https://youtu.be/hjR1IYVx9lY"><img src="https://github.com/user-attachments/assets/9af1364e-f0ea-403d-b3d4-655621a9b2df"/></a>
+<h3><a href="https://www.geeksforgeeks.org/problems/number-of-occurrence2259/1">Problem</a></h3>
+
+```js
+class Solution {
+    int count(int[] arr, int n, int x) {
+        // code here
+        int count = 0;
+        for(int i = 0;i<n;i++){
+            if(arr[i] == x){
+                count++;
+            }
+        }
+        return count;
+    }
+}
+```
+<h3>Time Complexity:O(n) and Space Complexity:0(1)</h3>
+<h3>Search Element in Rotated Array</h3>
+<a href=""><img src="https://github.com/user-attachments/assets/2592c18a-bc49-4b12-8314-224efcd913cb"/></a>
+<h3><a href="">Problem</a></h3>
+<h3></h3>
 <h1>String</h1>
 <h3>Find the Difference</h3>
 <h3><a href="https://leetcode.com/problems/find-the-difference/description/">Problem</a></h3>
