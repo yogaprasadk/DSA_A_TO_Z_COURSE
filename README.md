@@ -1880,9 +1880,62 @@ class Solution {
 ```
 <h3>Time Complexity:O(n) and Space Complexity:0(1)</h3>
 <h3>Search Element in Rotated Array</h3>
-<a href=""><img src="https://github.com/user-attachments/assets/2592c18a-bc49-4b12-8314-224efcd913cb"/></a>
-<h3><a href="">Problem</a></h3>
-<h3></h3>
+<a href="https://youtu.be/5qGrJbHhqFs"><img src="https://github.com/user-attachments/assets/2592c18a-bc49-4b12-8314-224efcd913cb"/></a>
+<h3><a href="https://leetcode.com/problems/search-in-rotated-sorted-array/description/">Problem</a></h3>
+<h3>Solution</h3>
+
+```js
+class Solution {
+    public int search(int[] nums, int target) {
+        int ans  = -1;
+        for(int i = 0;i<nums.length;i++){
+            if(nums[i] == target){
+                ans = i;
+            }
+        }
+        return ans;
+    }
+}
+```
+<h3>Time COmplexity:O(N) and Space Complexity: O(1)</h3>
+<h3>Search Element in Rotated Array II </h3>
+<h3><a href="https://leetcode.com/problems/search-in-rotated-sorted-array-ii/description/">Problem</a></h3>
+<h3>Solution</h3>
+
+```js
+class Solution {
+    public boolean search(int[] nums, int target) {
+       boolean ans  = true;
+       for(int i = 0;i<nums.length;i++){
+        if(nums[i] == target){
+            return ans;
+        }
+       }
+       return false; 
+    }
+}
+```
+<h3>Time COmplexity:O(N) and Space Complexity: O(1)</h3>
+<h3> Find Minimum in Rotated Sorted Array</h3>
+<h3><a href="https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/">Problem</a></h3>
+<h3>Solution</h3>
+
+```js
+class Solution {
+    public int findMin(int[] nums) 
+    {
+        Arrays.sort(nums);
+        int min = nums[0];
+        for(int i = 0;i<nums.length;i++){
+            if(nums[i]<min){
+                min = i;
+            }
+        }
+        return min;
+    }
+}
+```
+<h3>Time Complexity:O(n Logn) and Space Complexity:O(1)</h3>
 <h1>String</h1>
 <h3>Find the Difference</h3>
 <h3><a href="https://leetcode.com/problems/find-the-difference/description/">Problem</a></h3>
