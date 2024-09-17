@@ -1936,6 +1936,58 @@ class Solution {
 }
 ```
 <h3>Time Complexity:O(n Logn) and Space Complexity:O(1)</h3>
+<h3>Find Kth Rotation</h3>
+<a href="https://youtu.be/jtSiWTPLwd0"><img src="https://github.com/user-attachments/assets/69971668-a238-4bc5-ba88-ba38fc89e2cc"/></a>
+<h3><a href="https://www.geeksforgeeks.org/problems/rotation4723/1">Problem</a></h3>
+<h3>Solution</h3>
+
+```js
+public int findKRotation(List<Integer> arr) {
+        // Code here
+       int low=0;
+       int high=arr.size()-1;
+       int ans=Integer.MAX_VALUE;
+       int index=-1;
+      
+       
+       while(low<=high){
+            int mid=(low+high)/2;
+           
+           if(arr.get(low)<=arr.get(high)){
+               if(arr.get(low)<ans){
+                   index=low;
+                   ans=arr.get(low);
+                   
+               }
+               break;
+           }
+           //left part sorted.
+           if(arr.get(low)<=arr.get(mid)){
+               if(arr.get(low)<ans){
+                   index=low;
+                   ans=arr.get(low);
+                   
+               }
+                   low=mid+1;
+            
+           }
+           else{
+               //right part sorted.
+               if(arr.get(mid)<ans){
+                   index=mid;
+                   ans=arr.get(mid);
+                   
+               }
+               high=mid-1;
+               
+           }
+           
+       }
+       return index;
+       
+    }
+```
+<h3>Time Complexity: O(log2n) and Space Complexity: O(1)</h3>
 <h1>String</h1>
 <h3>Find the Difference</h3>
 <h3><a href="https://leetcode.com/problems/find-the-difference/description/">Problem</a></h3>
