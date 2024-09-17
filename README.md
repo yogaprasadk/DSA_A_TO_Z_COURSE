@@ -1988,6 +1988,56 @@ public int findKRotation(List<Integer> arr) {
     }
 ```
 <h3>Time Complexity: O(log2n) and Space Complexity: O(1)</h3>
+<h3>Single Element in Sorted Array</h3>
+<a href="https://youtu.be/AZOmHuHadxQ"><img src="https://github.com/user-attachments/assets/a625e82d-4dd6-4baa-a31e-08fc3696e57a/"></a>
+<h3><a href="https://leetcode.com/problems/single-element-in-a-sorted-array/description/">Problem</a></h3>
+
+<h3>Solution (Brute)</h3>
+ 
+```js
+class Solution {
+    public int singleNonDuplicate(int[] nums) {
+        int res = 0;
+        for(int ans : nums){
+            res = res ^ ans; 
+        }
+        return res;
+    }
+}
+```
+<h3>Time Complexity:O(n) and Space complexity: O(1)</h3>
+
+<h3>Solution (Optimal)</h3>
+
+```js
+class Solution {
+    public int singleNonDuplicate(int[] nums) {
+        int n = nums.length;
+        int left = 0;
+        int right = n - 1;  // Fix the initial value of right
+
+        while (left <= right) {
+            int mid = (left + right) / 2;
+
+            // Check if mid is the single element by verifying its neighbors, ensuring mid is not at the boundary
+            if ((mid == 0 || nums[mid] != nums[mid - 1]) && (mid == n - 1 || nums[mid] != nums[mid + 1])) {
+                return nums[mid];
+            }
+
+            // Adjust binary search range based on even/odd index and matching conditions
+            if ((mid % 2 == 0 && nums[mid] == nums[mid + 1]) || (mid % 2 == 1 && nums[mid] == nums[mid - 1])) {
+                left = mid + 1;  // Single element is in the right half
+            } else {
+                right = mid - 1;  // Single element is in the left half
+            }
+        }
+
+        return -1;  // Shouldn't reach here as there is always one non-duplicate element
+    }
+}
+```
+<h3>Time Complexity:O(Log n) and Space complexity: O(1)</h3>
+
 <h1>String</h1>
 <h3>Find the Difference</h3>
 <h3><a href="https://leetcode.com/problems/find-the-difference/description/">Problem</a></h3>
