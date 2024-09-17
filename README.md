@@ -23,9 +23,11 @@ class Solution
 <a href="https://youtu.be/un6PLygfXrA"><img src="https://github.com/yogaprasadk/DSA_A_TO_Z_COURSE/assets/174566721/3031a7d4-4381-4448-98b3-7c0eb8d6cdc0"/></a>
 <br/>
 
-<h4>Problem 2 Answer</h4>
+
 
 <a href="https://bit.ly/3y2BiWz"/>Problem</a>
+
+<h4>Problem 2 Answer</h4>
 
 ```js
 class Solution {
@@ -67,6 +69,8 @@ class Solution {
 <h4>Problem 4</h4>
 <a href="https://www.geeksforgeeks.org/problems/print-n-to-1-without-loop/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=print-n-to-1-without-loop">Problem</a>
 
+<h3>Solution</h3>
+
 ```js
 
 class Solution {
@@ -88,6 +92,8 @@ class Solution {
 <h4>Problem 5</h4>
 <a href="https://www.geeksforgeeks.org/problems/sum-of-first-n-terms5843/1">Problem</a>
 
+<h3>Solution</h3>
+
 ```js
 class Solution {
     long sumOfSeries(long n) {
@@ -102,9 +108,10 @@ class Solution {
 <h3>Video 5</h3>
 <a href="https://youtu.be/69ZCDFy-OUo"><img src="https://github.com/user-attachments/assets/00c24832-44bc-475e-b03b-c5ae054d0ce4"/></a>
 <br/>
-<h4>Problem 5</h4>
+<h3>Problem 5</h3>
 <a href="https://www.geeksforgeeks.org/problems/find-all-factorial-numbers-less-than-or-equal-to-n3548/0?problemType=functional&difficulty%255B%255D=-1&page=1&query=problemTypefunctionaldifficulty%255B%255D-1page1">Problem</a>
 
+<h3>Solution</h3>
 
 ```js
 
@@ -132,8 +139,11 @@ class Solution {
 <h3>Video 6</h3>
 <a href="https://youtu.be/twuC1F6gLI8"><img src="https://github.com/user-attachments/assets/c2050ca3-674e-4e0f-a416-041cadf89e57"/></a>
 <h3>Problem 6</h3>
+
 <!-- <a href="">Problem</a> -->
-1.Using an extra array
+<h3>1.Using an extra array</h3>
+
+<h3>Solution</h3>
 
 ```js 
 public class Main{
@@ -162,7 +172,8 @@ public class Main{
 }
 
 ```
-2.recursive Method
+<h3>2.recursive Method</h3>
+<h3>Solution</h3>
 
 ```js
 public class Main{
@@ -198,6 +209,8 @@ public class Main{
 <br/>
 <a href="https://leetcode.com/problems/valid-palindrome/">Problem</a>
 
+<h3>Solution</h3>
+
 ```js
 
 class Solution {
@@ -226,6 +239,8 @@ class Solution {
 <br/>
 <a href="https://leetcode.com/problems/fibonacci-number/description/">Problem</a>
 
+<h3>Solution</h3>
+
 ```js
 
 class Solution {
@@ -248,7 +263,10 @@ class Solution {
 <a href="https://youtu.be/3tQ6iEU50oQ"><img src="https://github.com/user-attachments/assets/308fab56-f43d-4d7a-895c-c09d387fe6b1"></a>
 <br/>
 <h3><a href="https://leetcode.com/problems/power-of-four/solutions/5471830/power-of-4/">Problem</a></h3>
+
 <p>Algorithm: Brian's Kernighans</p>
+
+<h3>Solution</h3>
 
 ```js
 class Solution {
@@ -275,6 +293,8 @@ class Solution {
 <a href="https://youtu.be/GNb8vSyw-WE"><img src="https://github.com/user-attachments/assets/e7de6d32-2af6-4fa0-be9d-0d434df53eed"></a>
 <br/>
 <h3><a href="https://leetcode.com/problems/power-of-three/">Problem</a></h3>
+
+<h3>Solution</h3>
 
 ```js
 
@@ -673,7 +693,7 @@ class Solution {
     }
 }
 ```
-<h6>Brute Solution</h6>
+<h3>Brute Solution</h3>
 1.
 
 ```js
@@ -739,6 +759,8 @@ class Solution {
 ```
 <br/>
 <h6>If array is sorted</h6>
+
+<h3>Solution</h3>
 
 ```js
 class Solution {
