@@ -2059,6 +2059,40 @@ class Solution {
 }
 ```
 <h3>Time Complexity:O(Log n) and Space complexity: O(1)</h3>
+<h3>Find The Peak Element</h3>
+<h3><a href="https://leetcode.com/problems/find-peak-element/description/">Problem</a></h3>
+
+<h3>Solution</h3>
+
+```js
+#include <vector>
+#include <limits.h>
+
+class Solution {
+public:
+    int findPeakElement(std::vector<int>& nums) {
+        int len = nums.size();
+        if (len == 1) {
+            return 0;
+        }
+        int max = INT_MIN, req = 0, res = 0;
+        for (int i = 0; i < len; i++) {
+            if (nums[i] > max) {
+                max = nums[i];
+                res = i;
+                req = 1;
+            }
+        }
+        if (req == 1) {
+            return res;
+        } else {
+            return 0;
+        }
+    }
+};
+
+```
+<h3>Time Complexity:O(N) and Space Complexity:O(1)</h3>
 
 <h1>String</h1>
 <h3>Find the Difference</h3>
