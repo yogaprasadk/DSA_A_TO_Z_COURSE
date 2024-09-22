@@ -2093,6 +2093,10 @@ public:
 
 ```
 <h3>Time Complexity:O(N) and Space Complexity:O(1)</h3>
+<h3>Find The Square root of a number in logn</h3>
+<h3><a href="https://bit.ly/3JXtGcE">Problem</a></h3>
+<h3>Find the Nth root of a number using binary search</h3>
+<h3><a href="https://bit.ly/3zWNyrL">Problem</a></h3>
 
 <h1>String</h1>
 <h3>Find the Difference</h3>
