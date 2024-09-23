@@ -2095,9 +2095,48 @@ public:
 <h3>Time Complexity:O(N) and Space Complexity:O(1)</h3>
 <h3>Find The Square root of a number in logn</h3>
 <h3><a href="https://bit.ly/3JXtGcE">Problem</a></h3>
+<h3>Solution</h3>
+
+```js
+class Solution {
+    long floorSqrt(long n) {
+        return (long)(Math.floor(Math.pow(n , 0.5)));
+    }
+}
+```
+<h3>Time COmplexity:O(1) and Space Complexity:O(1)</h3>
 <h3>Find the Nth root of a number using binary search</h3>
 <h3><a href="https://bit.ly/3zWNyrL">Problem</a></h3>
+<h3>Solution</h3>
 
+```js
+class Solution
+{
+    public int NthRoot(int n, int m)
+    {
+        // code here
+        int l=0;
+        int r=m;
+        
+        while(l<=r){
+            int mid=(l+r)/2;
+            
+            if(Math.pow(mid,n) == m){
+                return mid;
+            }
+            
+            else if(Math.pow(mid,n) < m){
+                l=mid+1;
+            }
+            
+            else{
+                r=mid-1;
+            }
+        }
+        return -1;
+    }
+```
+<h3>Time Complexity:O(log m) and Space Complxity: O(1)</h3>
 <h1>String</h1>
 <h3>Find the Difference</h3>
 <h3><a href="https://leetcode.com/problems/find-the-difference/description/">Problem</a></h3>
