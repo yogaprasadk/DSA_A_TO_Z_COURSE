@@ -2137,6 +2137,30 @@ class Solution
     }
 ```
 <h3>Time Complexity:O(log m) and Space Complxity: O(1)</h3>
+<h3>Find the kth missing number</h3>
+<a href="https://youtu.be/uZ0N_hZpyps"><img src="https://github.com/user-attachments/assets/86d08474-6bb8-4a50-953a-0e03da953f69"/></a>
+<h3><a href="https://leetcode.com/problems/kth-missing-positive-number/description/">Problem</a></h3>
+<h3>Solution</h3>
+
+```js
+class Solution {
+    public int findKthPositive(int[] arr, int k) {
+        int low = 0,high = arr.length - 1;
+        while(low<=high){
+            int mid = (low +  high)/2;
+            int misnum = arr[mid] - (mid + 1);
+            if(misnum < k){
+                low = mid + 1;
+            }
+            else{
+                high = mid - 1;
+            }
+        }
+        return k + high + 1;
+    }
+}
+```
+<h3>Time Complexity: O(n) and Space Complexity: O(1)</h3>
 <h1>String</h1>
 <h3>Find the Difference</h3>
 <h3><a href="https://leetcode.com/problems/find-the-difference/description/">Problem</a></h3>
