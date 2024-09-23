@@ -2161,6 +2161,27 @@ class Solution {
 }
 ```
 <h3>Time Complexity: O(n) and Space Complexity: O(1)</h3>
+<h3>Merge of Two Sorted arrays</h3>
+<h3><a href="https://www.geeksforgeeks.org/problems/k-th-element-of-two-sorted-array1317/1">Problem</a></h3>
+<h3>Solution</h3>
+
+```js
+class Solution {
+    public long kthElement(int k, int arr1[], int arr2[]) {
+        // code here
+        ArrayList<Integer> list = new ArrayList<>();
+        for(int i = 0;i<arr1.length;i++){
+            list.add(arr1[i]);
+        }
+        for(int i = 0;i<arr2.length;i++){
+            list.add(arr2[i]);
+        }
+        Collections.sort(list);
+        return list.get( k - 1);
+    }
+}
+```
+<h3>Time Complexity: O((n+m)log(n+m)) and Space Complexity: O(1)</h3>
 <h1>String</h1>
 <h3>Find the Difference</h3>
 <h3><a href="https://leetcode.com/problems/find-the-difference/description/">Problem</a></h3>
