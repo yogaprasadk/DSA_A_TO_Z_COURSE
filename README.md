@@ -2182,6 +2182,84 @@ class Solution {
 }
 ```
 <h3>Time Complexity: O((n+m)log(n+m)) and Space Complexity: O(1)</h3>
+<h3>Find The Smallest Divisor</h3>
+<a href="https://youtu.be/UvBKTVaG6U8"><img src="https://github.com/user-attachments/assets/3f68c1b7-a67f-4012-9843-f51e33605d35"/></a>
+<h3><a href="https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/">Problem</a></h3>
+<h3>Solution</h3>
+
+```js
+class Solution {
+    public int smallestDivisor(int[] nums, int threshold) {
+        Arrays.sort(nums);
+        int low = 1,high = nums[nums.length - 1],ans = 1;
+
+        while(low <= high){
+            int mid = (low + high) / 2;
+            int sum = 0;
+            for(int i = 0;i<nums.length;i++)
+            {
+                sum  = sum + (int) Math.ceil((double)nums[i] / (double)mid);
+            }
+            if(sum<=threshold){
+                ans = mid;
+                high = mid - 1;
+            }
+            else{
+                low = mid + 1;
+            }
+        }
+        return ans;
+    }
+}
+```
+<h3>Time Complexity:O(N log(Max(nums))) and space complexity:O(1)</h3>
+<h3>Capacity To Ship Packages Within D Days</h3>
+<a href="https://youtu.be/MG-Ac4TAvTY"><img src="https://github.com/user-attachments/assets/744d400e-1b3b-4c0b-b847-1919dd73108f"/></a>
+<h3><a href="https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/">Problem</a></h3>
+<h3>Solution</h3>
+
+```js
+class Solution {
+    public int shipWithinDays(int[] weights, int D) 
+    {
+        // minimum capacity
+        int minCap = 0;
+        // maximum capacity 
+        int maxCap = 0;
+        for (int weight : weights) 
+        {
+
+      minCap = Math.max(minCap, weight);
+      maxCap += weight;
+        }
+
+    // Apply binary search
+    while (minCap < maxCap) {
+      int mid = minCap + (maxCap - minCap) / 2;
+
+      // Try to ship with "mid" capacity
+      int days = 1;
+      int sum = 0;
+      for (int weight : weights) {
+        if (sum + weight > mid) {
+          days++;
+          sum = 0;
+        }
+        sum += weight;
+      }
+
+      // If more days are required, increase capacity
+      if (days > D)
+        minCap = mid + 1;
+      else
+        maxCap = mid;
+    }
+
+    return minCap;
+    }
+}
+```
+<h3>Time Complexity:(O logn)  and space complexity:O(1)</h3>
 <h1>String</h1>
 <h3>Find the Difference</h3>
 <h3><a href="https://leetcode.com/problems/find-the-difference/description/">Problem</a></h3>
