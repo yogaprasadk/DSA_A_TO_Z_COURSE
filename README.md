@@ -2260,6 +2260,103 @@ class Solution {
 }
 ```
 <h3>Time Complexity:(O logn)  and space complexity:O(1)</h3>
+<h3>Merge TWO Sorted Arrays</h3>
+<a href="https://youtu.be/C2rRzz-JDk8"><img src="https://github.com/user-attachments/assets/7f6cea03-0263-4ee0-933a-fec863cbd740"/></a>
+<h3><a href="https://leetcode.com/problems/median-of-two-sorted-arrays/">Problem</a></h3>
+<h3>Solution</h3>
+
+```js
+class Solution {
+    public double findMedianSortedArrays(int[] nums1, int[] nums2) {
+        int n1 = nums1.length,n2 = nums2.length;
+        int i = 0,j = 0;
+        int n = n1 + n2;
+
+        // index2
+        int ind2 = n / 2;
+    
+        // index1
+        int ind1 = ind2 - 1;
+
+
+        // count
+        int count = 0;
+
+        // index element 1
+        int ind1el = -1;
+        // index element 2
+        int ind2el = -1;
+
+        // running loops
+        while(i < n1 && j < n2)
+        {
+            // nums1 is less than nums2
+            if(nums1[i] < nums2[j])
+            {
+
+                // index1 is equalto  count
+                if(count == ind1){
+                    ind1el = nums1[i];
+                }
+                // index1 is equato count 
+                if(count == ind2){
+                    ind2el = nums1[i];
+                }
+                count++;
+                i++;
+            }
+            
+            // nums2 is less than nums1
+            else{
+
+                // index1 is equalto  count
+                if(count == ind1){
+                    ind1el = nums2[j];
+                }
+                // index1 is equato count 
+                if(count == ind2){
+                    ind2el = nums2[j];
+                }
+                count++;
+                j++;
+            }
+        }
+        while (i<n1)
+        {
+            // index1 is equalto  count
+                if(count == ind1){
+                    ind1el = nums1[i];
+                }
+                // index1 is equato count 
+                if(count == ind2){
+                    ind2el = nums1[i];
+                }
+                count++;
+                i++;
+        }
+        while( j<n2)
+        {
+            // index1 is equalto  count
+                if(count == ind1){
+                    ind1el = nums2[j];
+                }
+                // index1 is equato count 
+                if(count == ind2)
+                {
+                    ind2el = nums2[j];
+                }
+                count++;
+                j++;
+        }
+        if(n %2 == 1){
+            return ind2el;
+        }
+
+        return (double)((double)(ind1el + ind2el)) / 2.0;
+    }
+}
+```
+<h3>Time Complexity:O log(m + n) and Space Complexity: O(1)</h3>
 <h1>String</h1>
 <h3>Find the Difference</h3>
 <h3><a href="https://leetcode.com/problems/find-the-difference/description/">Problem</a></h3>
