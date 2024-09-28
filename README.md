@@ -2357,6 +2357,52 @@ class Solution {
 }
 ```
 <h3>Time Complexity:O log(m + n) and Space Complexity: O(1)</h3>
+<h3>Allocate Books</h3>
+<a href="https://youtu.be/Z0hwjftStI4"><img src="https://github.com/user-attachments/assets/9a4c4da9-aa61-4854-89f9-698fc09c6e89"></a>
+<h3><a href="https://www.naukri.com/code360/problems/allocate-books_1090540?leftPanelTabValue=PROBLEM">Problem</a></h3>
+<h3>Solution</h3>
+
+```js
+#include<bits/stdc++.h>
+
+int countstudents(vector<int> &arr,int pages){
+        int students = 1;
+        long long pagestudent = 0;
+        for(int i = 0;i<arr.size();i++){
+            if(pagestudent + arr[i] <= pages){
+                pagestudent += arr[i];
+            }
+            else{
+                students = students + 1;
+                pagestudent = arr[i];
+            }
+        } 
+    return students;
+}
+
+
+int findPages(vector<int>& arr, int n, int m) {
+    // Write your code here.
+    if(m>n) return -1;
+    int low = *max_element(arr.begin(),arr.end());
+    int high = accumulate(arr.begin(),arr.end(),0);
+
+
+    while(low <= high){
+        int mid = (low+high)/2;
+        int students = countstudents(arr,mid);
+        if(students>m){
+            low = mid + 1;
+        }
+        else{
+            high = mid - 1;
+        }
+    }
+
+    return low;
+}
+```
+<h3>Time Complexity: O(log 2 max - min)n and Space Complexity : O(1)</h3>
 <h1>String</h1>
 <h3>Find the Difference</h3>
 <h3><a href="https://leetcode.com/problems/find-the-difference/description/">Problem</a></h3>
