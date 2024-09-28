@@ -2402,7 +2402,60 @@ int findPages(vector<int>& arr, int n, int m) {
     return low;
 }
 ```
-<h3>Time Complexity: O(log 2 max - min)n and Space Complexity : O(1)</h3>
+<h3>Time Complexity: O(N∗Log(Sum(Arr))) and Space Complexity : O(1)</h3>
+<h3>Largest sum array</h3>
+<a href="https://youtu.be/thUd_WJn6wk"><img src="https://github.com/user-attachments/assets/0c6b7a82-0e12-4582-9b70-6fefa19afc1d"/></a>
+<h3><a href="https://leetcode.com/problems/split-array-largest-sum/description/">Problem 1</h3>
+<h3><a href="https://www.naukri.com/code360/problems/painter-s-partition-problem_1089557?leftPanelTabValue=SUBMISSION">Problem 2</a></h3>
+<h3>Solution</h3>
+
+```js
+#include<bits/stdc++.h>
+
+int countstudents(vector<int> &arr,int pages){
+        int students = 1;
+        long long pagestudent = 0;
+        for(int i = 0;i<arr.size();i++){
+            if(pagestudent + arr[i] <= pages){
+                pagestudent += arr[i];
+            }
+            else{
+                students = students + 1;
+                pagestudent = arr[i];
+            }
+        } 
+    return students;
+}
+
+
+int findPages(vector<int>& arr, int n, int m) {
+    // Write your code here.
+    if(m>n) return -1;
+    int low = *max_element(arr.begin(),arr.end());
+    int high = accumulate(arr.begin(),arr.end(),0);
+
+
+    while(low <= high){
+        int mid = (low+high)/2;
+        int students = countstudents(arr,mid);
+        if(students>m){
+            low = mid + 1;
+        }
+        else{
+            high = mid - 1;
+        }
+    }
+
+    return low;
+}
+int findLargestMinDistance(vector<int> &arr, int k)
+{
+    //    Write your code here.
+    return findPages(arr,arr.size(),k);
+}
+```
+<h3>Time Complexity: O(N∗Log(Sum(Arr))) and Space Complexity : O(1)</h3>
+
 <h1>String</h1>
 <h3>Find the Difference</h3>
 <h3><a href="https://leetcode.com/problems/find-the-difference/description/">Problem</a></h3>
