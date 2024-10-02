@@ -2486,6 +2486,51 @@ class Solution {
 }
 ```
 <h3>Time coMPLExity:O(n * m) and space complexity:O(1)</h3>
+<h3>Search an 2d matrix array</h3>
+<h3><a href="https://leetcode.com/problems/search-a-2d-matrix/description/">Problem</a></h3>
+<h3>Solution</h3>
+
+```js
+class Solution {
+    searchMatrix(matrix, target) {
+        let ans = true;
+        for (let m = 0; m < matrix.length; m++) {
+            for (let n = 0; n < matrix[m].length; n++) {
+                if (matrix[m][n] === target) {
+                    return ans;
+                }
+            }
+        }
+        return false;
+    }
+}
+
+```
+<h3>Time Complexity:O(m * n) and Space complexity:O(1)</h3>
+<h3>Search an 2d matrix array</h3>
+<h3><a href="https://leetcode.com/problems/search-a-2d-matrix-ii/description/">Problem</a></h3>
+<h3>Solution</h3>
+
+```js
+class Solution {
+    searchMatrix(matrix, target) {
+        let ans = true;
+        for (let m = 0; m < matrix.length; m++) {
+            for (let n = 0; n < matrix[m].length; n++) {
+                if (matrix[m][n] === target) {
+                    return ans;
+                }
+            }
+        }
+        return false;
+    }
+}
+
+```
+<h3>Time Complexity:O(m * n) and Space complexity:O(1)</h3>
+
+
+
 <h1>String</h1>
 <h3>Find the Difference</h3>
 <h3><a href="https://leetcode.com/problems/find-the-difference/description/">Problem</a></h3>
