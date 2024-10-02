@@ -2455,7 +2455,37 @@ int findLargestMinDistance(vector<int> &arr, int k)
 }
 ```
 <h3>Time Complexity: O(N∗Log(Sum(Arr))) and Space Complexity : O(1)</h3>
+<h3>Row with max1's</h3>
+<a href="https://youtu.be/SCz-1TtYxDI?si=Zc3jBEkMMcoIg0l2"><img src="https://github.com/user-attachments/assets/89b476f2-5360-4893-87cd-f06a65034175"/></a>
+<h3><a href="https://www.geeksforgeeks.org/problems/row-with-max-1s0023/1">Problem</a></h3>
+<h3>Solution</h3>
 
+```js
+class Solution {
+    public int rowWithMax1s(int arr[][]) 
+    {
+       int ans = -1;
+       int max = 0;
+       for(int i = 0;i< arr.length;i++)
+       {
+          int count = 0;
+           for(int j = 0;j<arr[i].length;j++)
+           {
+               if(arr[i][j] == 1){
+                   count  = count + 1;
+               }
+           }
+           if(count > max){
+               max = count;
+               ans = i;
+           }
+       }
+       return ans;
+        
+    }
+}
+```
+<h3>Time coMPLExity:O(n * m) and space complexity:O(1)</h3>
 <h1>String</h1>
 <h3>Find the Difference</h3>
 <h3><a href="https://leetcode.com/problems/find-the-difference/description/">Problem</a></h3>
