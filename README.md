@@ -2528,6 +2528,54 @@ class Solution {
 
 ```
 <h3>Time Complexity:O(m * n) and Space complexity:O(1)</h3>
+<h3>Find The Peak ELement II</h3>
+<h3><a href="https://leetcode.com/problems/find-a-peak-element-ii/description/">Problem</a></h3>
+<h3>Solution</h3>
+
+```js
+class Solution {
+    public int[] findPeakGrid(int[][] matrix) {
+        // using binary search 
+        int low = 0;
+        int high = matrix[0].length - 1;
+        while(low <= high){
+            // mid value
+            int mid = (low+high) / 2;
+            int row = maxiele(matrix,mid);
+            int left = mid - 1>=0 ? matrix[row][mid - 1] : -1;
+            int right = mid + 1< matrix[0].length?matrix[row][mid+1] : -1;
+            if(matrix[row][mid]>left&&matrix[row][mid]>right) {
+                return new int[]{row,mid};
+            }
+            else if(matrix[row][mid]<left) {
+                high=mid-1;
+            }
+            else {
+                low=mid+1;
+            }
+        }
+        return new int[]{-1,-1};
+    }
+
+    // to find maximum element
+    public int maxiele(int[][] array,int column){
+        // max element
+        int max = Integer.MIN_VALUE;
+        int row = -1;
+        for(int m = 0;m<array.length;m++){
+            if(max<array[m][column]){
+                max = array[m][column];
+                row  = m;
+            }
+        } 
+        return row;
+    }
+}
+
+
+```
+<h3>Time Complexity:O(LOg m) and Space complexity:O(1)</h3>
+
 
 
 
