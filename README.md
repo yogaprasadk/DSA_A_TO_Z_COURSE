@@ -1,3 +1,6 @@
+<h1>Sorting techniques</h1>
+<
+
 <h1> Basic Recursion</h1>
 
 <h3>Video 1</h3>
@@ -476,7 +479,7 @@ class solution
 <h3>Bubble Sort - Time Complexity:O(n2)</h3>
 <br/>
 <h3>Insertion Sort</h3>
-<a href="https://youtu.be/HGk_ypEuS24"><img src="https://github.com/user-attachments/assets/ed45f0f2-5908-4336-b5e7-a64a5a59adc8"/></a><br/>
+<a href="https://youtu.be/HGk_ypEuS24"><img src="https://github.com/user-attachments/assets/3a855211-ceda-4dbd-92b4-3575f4a6c4f9"/></a><br/>
 <a href="https://www.geeksforgeeks.org/problems/insertion-sort/0?category%5B%5D=Algorithms&page=1&query=category%5B%5DAlgorithmspage1">Problem</a>
 <h3>Solution</h3>
 
@@ -642,6 +645,16 @@ class solution
     arr[j] = swapTemp;
   }
 ```
+<h3>Recursive Bubble Sort and Merge Sort</h3>
+<h3><a href="https://www.geeksforgeeks.org/problems/bubble-sort/1">Recursive Bubble sort Problem</a></h3>
+<h3><a href="https://www.geeksforgeeks.org/problems/insertion-sort/1">Recursive Insertion Sort Problem</a></h3>
+
+<h3>Solution</h3>
+
+```js
+Arrays.sort(arr);
+```
+
 
 <br/>
 <h1>Arrays</h1>
