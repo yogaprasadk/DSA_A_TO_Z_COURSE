@@ -1,5 +1,3 @@
-
-
 <h1> Basic Recursion</h1>
 
 <h3>Video 1</h3>
@@ -2693,3 +2691,18 @@ class Solution {
     }
 }
 ```
+
+<h3>Rotate a string</h3>
+<a href="https://youtu.be/kP2cpOPNYRc?si=-wsG_rAkrsXMBaQq"><img src="https://github.com/user-attachments/assets/83be0f05-571d-4c16-bb6e-b03081ddac94"/></a>
+<h3><a href="https://leetcode.com/problems/rotate-string/description/">Problem</a></h3>
+<h3>Solution</h3>
+
+```js
+class Solution 
+{
+    public boolean rotateString(String s, String goal) {
+        return (s.length() == goal.length() && (s+s).contains(goal));
+    }
+}
+```
+<h3>Time Complexity: O(n) and Space Complexity: O(1)</h3>
