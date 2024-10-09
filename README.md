@@ -21,9 +21,6 @@ class Solution
 ```
 <h3>Video 2</h3>
 <a href="https://youtu.be/un6PLygfXrA"><img src="https://github.com/yogaprasadk/DSA_A_TO_Z_COURSE/assets/174566721/3031a7d4-4381-4448-98b3-7c0eb8d6cdc0"/></a>
-<br/>
-
-
 
 <a href="https://bit.ly/3y2BiWz"/>Problem</a>
 
