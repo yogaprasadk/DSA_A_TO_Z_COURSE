@@ -1,4 +1,4 @@
-<h1> Basic Recursion</h1>
+<h1> Basic Recursion </h1>
 
 <h3>Video 1</h3>
 <a href="https://youtu.be/yVdKa8dnKiE"><img src="https://github.com/yogaprasadk/DSA_A_TO_Z_COURSE/assets/174566721/d2111cca-c62c-4b29-a132-041933f9bbbc"/></a>
