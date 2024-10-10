@@ -2708,3 +2708,78 @@ class Solution
 }
 ```
 <h3>Time Complexity: O(n) and Space Complexity: O(1)</h3>
+
+<h3>Isomorphic String</h3>
+<h3><a href="https://leetcode.com/problems/isomorphic-strings/">Problem</a></h3>
+<h3>Solution</h3>
+
+```js
+class Solution {
+    public boolean isIsomorphic(String s, String t) {
+
+        if(s.length() != t.length()){
+            return false;
+        }
+
+        HashMap<Character,Character> h1 = new HashMap<>();
+        char[] c = s.toCharArray();
+        char[] d = t.toCharArray();
+        HashSet <Character> e = new HashSet<>();
+        HashSet <Character> f = new HashSet<>();
+
+        for(int i = 0; i < c.length ; i++){
+            if(h1.containsKey(c[i])){
+                char value = h1.get(c[i]);
+                if(value != d[i]){
+                    return false;
+                }
+            }
+            else{
+                e.add(c[i]);
+                f.add(d[i]);
+                h1.put(c[i],d[i]);
+            }
+        }
+
+        if(e.size() != f.size()){
+            return false;
+        }
+
+        return true;
+    }
+}
+```
+
+<h3>Time Complexity:O(n)*min and Space Complexity: O(1)</h3>
+
+<h3>Longest prefix</h3>
+<a href="https://www.youtube.com/watch?v=bl8ue-dTxgs"><img src="https://github.com/user-attachments/assets/ee2702db-2cf6-45d3-a5c1-e5a00267d0fe"></a>
+<h3><a href="https://leetcode.com/problems/longest-common-prefix/description/">Problem</a></h3>
+<h3>Solution</h3>
+
+```js
+class Solution {
+    public String longestCommonPrefix(String[] strs) {
+        if (strs == null || strs.length == 0) {
+            return "";
+        }
+
+        if (strs.length == 1) {
+            return strs[0];
+        }
+
+        int prefixEnd = 0;
+        while (true) {
+            for (int i = 0; i < strs.length - 1; i++) {
+                if (prefixEnd >= strs[i].length() || prefixEnd >= strs[i+1].length())
+                    return strs[0].substring(0, prefixEnd);
+
+                if (strs[i].charAt(prefixEnd) != strs[i + 1].charAt(prefixEnd))
+                    return strs[0].substring(0, prefixEnd);
+            }
+            prefixEnd++;
+        }
+    }
+}
+```
+<h3>Time Complexity: O(n * m) and space complexity: O(1)</h3>
