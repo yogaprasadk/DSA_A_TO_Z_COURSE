@@ -1,3 +1,8 @@
+<h1>Basic Maths</h1>
+
+<a href="https://youtu.be/1xNbjMdbjug"><img src="https://github.com/user-attachments/assets/72578026-cf11-4442-8ba1-6d49e2b66f21"/></a>
+
+
 <h1> Basic Recursion </h1>
 
 <h3>Video 1</h3>
