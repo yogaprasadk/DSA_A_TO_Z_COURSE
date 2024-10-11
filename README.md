@@ -2716,41 +2716,29 @@ class Solution
 ```js
 class Solution {
     public boolean isIsomorphic(String s, String t) {
+        // create array to store index of characters in both strings
+        int[] indexs = new int[200];
+        int[] indext = new int[200];
 
+        // if the length is not equal then return false
         if(s.length() != t.length()){
             return false;
         }
 
-        HashMap<Character,Character> h1 = new HashMap<>();
-        char[] c = s.toCharArray();
-        char[] d = t.toCharArray();
-        HashSet <Character> e = new HashSet<>();
-        HashSet <Character> f = new HashSet<>();
-
-        for(int i = 0; i < c.length ; i++){
-            if(h1.containsKey(c[i])){
-                char value = h1.get(c[i]);
-                if(value != d[i]){
-                    return false;
-                }
+        //iterate through each charaters
+        for(int i = 0;i<s.length();i++){
+            if(indexs[s.charAt(i)] != indext[t.charAt(i)]){
+                return false;
             }
-            else{
-                e.add(c[i]);
-                f.add(d[i]);
-                h1.put(c[i],d[i]);
-            }
+            indexs[s.charAt(i)] = i + 1;
+            indext[t.charAt(i)] = i + 1;
         }
-
-        if(e.size() != f.size()){
-            return false;
-        }
-
         return true;
     }
 }
 ```
 
-<h3>Time Complexity:O(n)*min and Space Complexity: O(1)</h3>
+<h3>Time Complexity:O(n) and Space Complexity: O(1)</h3>
 
 <h3>Longest prefix</h3>
 <a href="https://www.youtube.com/watch?v=bl8ue-dTxgs"><img src="https://github.com/user-attachments/assets/ee2702db-2cf6-45d3-a5c1-e5a00267d0fe"></a>
@@ -2783,3 +2771,43 @@ class Solution {
 }
 ```
 <h3>Time Complexity: O(n * m) and space complexity: O(1)</h3>
+
+<h3>Longest Odd Number in a string</h3>
+<h3><a href="https://leetcode.com/problems/largest-odd-number-in-string/">Problem</a></h3>
+
+```js
+class Solution {
+    public String largestOddNumber(String num) {
+        if(num.length() == 0) return "";
+        for(int i = num.length() - 1;i>=0;i--){
+            char res = num.charAt(i);
+            if(res % 2 == 1){
+                return num.substring(0,i+1);
+            }
+        }
+        return "";
+    }
+}
+```
+<h3>Tim complexity: o(n) and space complexity:O(1)</h3>
+
+<h3>largest 3-same digit number in a string </h3>
+<h3><a href="https://leetcode.com/problems/largest-3-same-digit-number-in-string/">Problem</a></h3>
+
+```js
+class Solution {
+    public String largestGoodInteger(String num) {
+        
+ 
+        String[] sequences = {"999", "888", "777", "666", "555", "444", "333", "222", "111", "000"};
+
+        for (String seq : sequences) {
+            if (num.contains(seq)) {
+                return seq;
+            }
+        }
+        return "";
+    }
+}
+```
+<h3>Tim complexity: o(n) and space complexity:O(1)</h3>
