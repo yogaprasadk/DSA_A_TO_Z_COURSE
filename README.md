@@ -2842,3 +2842,22 @@ class Solution {
 }
 ```
 <h3>Time Complexity:O(N) and Space Complexity: O(1)</h3>
+<h3>Reverse Words in a string</h3>
+<a href="https://youtu.be/tX-ZcKTNwYk?si=8JJYMybFSOu6eYAP"><img src="https://github.com/user-attachments/assets/2e2ffa25-0846-46b6-a542-92838995be83"/></a>
+<h3><a href="https://leetcode.com/problems/reverse-words-in-a-string/description/">Problem</a></h3>
+<h3>Solution</h3>
+
+```js
+class Solution {
+    public String reverseWords(String s) {
+        String[] arr = s.split(" +"); // use split function and regex 
+        StringBuilder res = new StringBuilder();
+        for(int index = arr.length - 1;index>=0;index--){
+                res.append(arr[index]);
+                res.append(" ");
+        } 
+        return res.toString().trim();
+    }
+}
+```
+<h3>Time Complexity:O(N) and Space Complexity: O(1)</h3>
