@@ -2811,3 +2811,34 @@ class Solution {
 }
 ```
 <h3>Tim complexity: o(n) and space complexity:O(1)</h3>
+
+<h3>Remove Valid Parenthesis</h3>
+<h3><a href="https://leetcode.com/problems/remove-outermost-parentheses/description/">Problem</a></h3>
+<h3>Solution</h3>
+
+```js
+class Solution {
+    public String removeOuterParentheses(String s) {
+        StringBuilder str = new StringBuilder();
+        int cnt = 0;
+        char[] ch = s.toCharArray();
+        int n = ch.length;
+
+        for(int i = 1; i < n; ++i) {
+            if(ch[i] == '(') {
+                cnt++;
+                str.append('(');
+            }
+            else {
+                if(cnt == 0) i++;
+                else {
+                    cnt--;
+                    str.append(')');
+                }
+            }
+        }
+        return str.toString();
+    }
+}
+```
+<h3>Time Complexity:O(N) and Space Complexity: O(1)</h3>
