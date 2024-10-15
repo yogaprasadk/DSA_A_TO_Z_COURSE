@@ -2861,3 +2861,26 @@ class Solution {
 }
 ```
 <h3>Time Complexity:O(N) and Space Complexity: O(1)</h3>
+
+<h3>Maximum Nesting Depth of parenthesis</h3>
+<h3><a href="https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/description/">Problem</a></h3>
+<h3>Solution</h3>
+
+```js
+class Solution {
+    public int maxDepth(String s) {
+        int soln = 0,count = 0;
+        for(char req : s.toCharArray()){
+            if(req == '('){
+                count++;
+            }
+            else if(req == ')'){
+                count--;
+            }
+            soln = Math.max(soln,count);
+        }
+        return soln;
+    }
+}
+```
+<h3>Time Complexity: O(N) and Space Complexity:O(1)</h3>
