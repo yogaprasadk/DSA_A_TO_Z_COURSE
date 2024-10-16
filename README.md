@@ -2884,3 +2884,35 @@ class Solution {
 }
 ```
 <h3>Time Complexity: O(N) and Space Complexity:O(1)</h3>
+
+<h3>Roman to Integer</h3>
+<a href="https://youtu.be/dlATMslQ6Uc"><img src="https://github.com/user-attachments/assets/36d16bdc-b59f-45c2-bedd-956adce2cf7b"/></a>
+<h3><a href="https://leetcode.com/problems/roman-to-integer/">Problem</a></h3>
+<h3>Solution</h3>
+
+```js
+class Solution {
+    public int romanToInt(String s) {
+        Map<Character, Integer> ans = new  HashMap<>();
+        ans.put('I',1);
+        ans.put('V',5);
+        ans.put('X',10);
+        ans.put('L',50);
+        ans.put('C',100);
+        ans.put('D',500);
+        ans.put('M',1000);
+         
+        int result = ans.get(s.charAt(s.length() - 1));
+        for(int i = s.length() - 2;i>=0;i--){
+            if(ans.get(s.charAt(i)) < ans.get(s.charAt(i + 1))){
+                result = result - ans.get(s.charAt(i));
+            }
+            else{
+                result = result + ans.get(s.charAt(i));
+            }
+        }
+        return result;
+    }
+}
+```
+<h3>Time Complexity: O(N) and Space Complexity:O(1)</h3>
