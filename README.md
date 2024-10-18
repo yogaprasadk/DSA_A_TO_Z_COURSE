@@ -2916,3 +2916,23 @@ class Solution {
 }
 ```
 <h3>Time Complexity: O(N) and Space Complexity:O(1)</h3>
+<h3>Length of a last word</h3>
+<h3><a href="https://leetcode.com/problems/length-of-last-word/description/?envType=study-plan-v2&envId=programming-skills">Problem</a></h3>
+<h3>Solution</h3>
+
+```js
+class Solution {
+    public int lengthOfLastWord(String s) {
+        s = s.trim();
+        int count = 0;
+        for(int index = s.length() - 1;index >= 0;index--){
+            if(s.charAt(index) == ' '){
+                break;
+            }
+            count = count + 1;
+        }
+        return count;
+    }
+}
+```
+<h3>Time Complexity: O(N) and Space Complexity:O(1)</h3>
