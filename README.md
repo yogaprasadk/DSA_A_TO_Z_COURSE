@@ -1721,6 +1721,30 @@ class Solution {
 }
 ```
 <h3>Time Complexity: O(n) and Space Complexity: o(n)</h3>
+<h3>Sign of the Product array </h3>
+<h3><a href="">Problem</a></h3>
+<h3>Solution</h3>
+
+```js
+class Solution {
+    public int arraySign(int[] nums) {
+        double result = 1;
+        for(int i = 0;i<nums.length;i++){
+            result = result * nums[i];
+        }
+        if(result < 0){
+            return -1;
+        }
+        else if(result > 0){
+            return 1;
+        }
+        else{
+            return 0;
+        }
+    }
+}
+```
+<h3>TIme Complexity: O(N) and Space Complexity: O(1)</h3>
 <h1>Binary Search</h1>
 <h3>Introduction</h3>
 <a href="https://youtu.be/MHf6awe89xw"><img src="https://github.com/user-attachments/assets/02410bb3-8cd9-428c-81dd-dc6d47abe6c5"/></a>
