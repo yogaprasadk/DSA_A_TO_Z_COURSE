@@ -3026,5 +3026,41 @@ long long int myAtoi(char* s) {
   
 }
 ```
+<h3>Time Complexity: O(N) and Space Complexity:O(1)</h3>
 
+<h3>Longest Palindrome Substring </h3>
+<h3><a href="https://leetcode.com/problems/longest-palindromic-substring/description/">Problem</a></h3>
+<h3>Solution</h3>
+
+```js
+class Solution {
+      public int l = 0;
+    public int r = 0;
+
+    public void func(char[] ch, int i) {
+        if (i >= ch.length) return;
+        int s = i;
+        int e = i;
+        while (e < ch.length - 1 && ch[e] == ch[e + 1]) e++;
+        i=e;
+        while (s >= 0 && e < ch.length && ch[s] == ch[e]) {
+            s--;
+            e++;
+        }
+        s++;
+        e--;
+        if (e - s > r - l) {
+            r = e;
+            l = s;
+        }
+        func(ch, i + 1);
+    }
+
+    public String longestPalindrome(String s) {
+        char[] ch = s.toCharArray();
+        func(ch, 0);
+        return s.substring(l, r + 1);
+    }
+}
+```
 <h3>Time Complexity: O(N) and Space Complexity:O(1)</h3>
