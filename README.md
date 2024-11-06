@@ -3064,3 +3064,5 @@ class Solution {
 }
 ```
 <h3>Time Complexity: O(N) and Space Complexity:O(1)</h3>
+<h1>Linked List</h1>
+<a href="https://youtu.be/Nq7ok-OyEpg"><img src="https://github.com/user-attachments/assets/24de4b45-2aaa-46d3-a363-f457e1f9fe0b"/></a>
