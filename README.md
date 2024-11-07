@@ -3065,4 +3065,65 @@ class Solution {
 ```
 <h3>Time Complexity: O(N) and Space Complexity:O(1)</h3>
 <h1>Linked List</h1>
+
+<h4>Pseudocode to Construct Single Linked List</h4>
+
+```js
+class Node{
+    
+    int data;
+    Node next;
+    
+    // linkedlist starts. 
+    Node(int data1,Node next1){
+        this.data = data1;
+        this.next = next1;
+    }
+    
+    //linkedlist ends.
+    
+    Node(int data1){
+        this.data = data1;
+        this.next = null;
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("linked list");
+		
+		int arr[] = {2,4,5,2,24,2};
+		
+		Node av = new Node(arr[2]);
+		System.out.println(av.data);
+	}
+}
+```
+
+
 <a href="https://youtu.be/Nq7ok-OyEpg"><img src="https://github.com/user-attachments/assets/24de4b45-2aaa-46d3-a363-f457e1f9fe0b"/></a>
+<h3><a href="https://www.geeksforgeeks.org/problems/introduction-to-linked-list/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=introduction-to-linked-list">Problem</a></h3>
+<h3>Solution</h3>
+
+```js
+class Solution {
+    static Node constructLL(int[] arr) {
+        // code here
+        // null 
+        Node ptr = new Node(0);
+        // assign head as array first value
+        Node head = new Node(arr[0]);
+        
+        ptr = head;
+        
+        for(int i = 1;i<arr.length;i++){
+            Node temp = new Node(arr[i]);
+            ptr.next = temp;
+            ptr = temp;
+        }
+        
+        return head;
+        
+    }
+}
+```
