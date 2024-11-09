@@ -3064,7 +3064,8 @@ class Solution {
 }
 ```
 <h3>Time Complexity: O(N) and Space Complexity:O(1)</h3>
-<h1>Linked List</h1>
+<h1>Linked List - Single,Double,Circular</h1>
+<a href="https://www.youtube.com/watch?v=58YbpRDc4yw&list=PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAyYqJ&index=44"><img src="https://github.com/user-attachments/assets/e83b9187-d05c-4166-a95f-b9904d115f44"/></a>
 
 <h4>Pseudocode to Construct Single Linked List</h4>
 
@@ -3099,9 +3100,6 @@ public class Main
 	}
 }
 ```
-
-
-<a href="https://youtu.be/Nq7ok-OyEpg"><img src="https://github.com/user-attachments/assets/24de4b45-2aaa-46d3-a363-f457e1f9fe0b"/></a>
 <h3><a href="https://www.geeksforgeeks.org/problems/introduction-to-linked-list/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=introduction-to-linked-list">Problem</a></h3>
 <h3>Solution</h3>
 
