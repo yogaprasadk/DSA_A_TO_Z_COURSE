@@ -3100,6 +3100,58 @@ public class Main
 	}
 }
 ```
+
+<h3>Linked List nOtes from Kunal Kushawaha</h3>
+
+```js
+private class LL
+{
+	private Node head;
+	private Node tail; 
+	class Node
+	{
+		// reference variables
+		private int value;
+		private Node data;
+
+		// constructor
+		public Node(int value){
+			this.value =  value;
+		}
+
+		public Node(int value,Node node){
+
+			this.value = value;
+			this.node  = node; 
+		}
+	}
+	// size
+	private int size;
+	// constructor
+	public LL(){
+		this.size = 0;
+	}
+
+        public void insert(int value){
+		Node node = new Node(value);
+		node.next = head;
+		head = node;
+		if(tail == null){
+			tail = head;
+		}
+		size++;
+	}
+}
+
+public class Main
+{
+
+	public static void main(String args[])
+	{
+		LL list  = new LL();
+	}
+}
+```
 <h3><a href="https://www.geeksforgeeks.org/problems/introduction-to-linked-list/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=introduction-to-linked-list">Problem</a></h3>
 <h3>Solution</h3>
 
