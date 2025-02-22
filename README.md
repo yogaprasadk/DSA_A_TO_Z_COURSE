@@ -1572,7 +1572,7 @@ class Solution {
         {
             int left  = i + 1;
             int right = nums.length - 1;
-            while(left <  right)
+            while(left <  right) 
             {
                 // sum nums values
 
