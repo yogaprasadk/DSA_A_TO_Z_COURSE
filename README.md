@@ -1,5 +1,4 @@
 <h1>Basic Maths</h1>
-
 <a href="https://youtu.be/1xNbjMdbjug"><img src="https://github.com/user-attachments/assets/72578026-cf11-4442-8ba1-6d49e2b66f21"/></a>
 
 
@@ -1745,6 +1744,167 @@ class Solution {
 }
 ```
 <h3>TIme Complexity: O(N) and Space Complexity: O(1)</h3>
+<br/>
+<h3>Two Pointer Technique</h3>
+<a href="https://www.geeksforgeeks.org/two-pointers-technique/?ref=lbp"><img src ="https://github.com/user-attachments/assets/6516ea09-b99b-46f1-970c-7918ef514b88"></a>
+
+```java
+public class Main
+{
+	public static void main(String[] args) {
+		int arr[] = {2,5,8,12,30};
+		int target = 17;
+		int len = arr.length;
+		boolean ans = efficient(arr,target,len);
+		System.out.println(ans);
+	}
+	
+	public static boolean brute(int[] arr,int x,int len){
+	
+	for (int i = 0;i<len - 1;i++){
+	    for(int j = i + 1;j<len;j++){
+	        if(arr[i]+arr[j] == x){
+	            return true;
+	        }
+	    }
+	} 
+    return false;
+	}
+	
+	public static boolean efficient(int[] arr,int x,int len){
+	       int i = 0;
+	       int j = len - 1;
+	       while(i < j){
+	           if((arr[i]+arr[j]) == x){
+	               return true;
+	           }
+	           else if((arr[i]+arr[j]) > x){
+	               j--;
+	           }
+	           else{
+	               i++;
+	           }
+	       }
+	       return false;
+	}
+}
+
+```
+<h3>Prefix Sum</h3>
+<a href="https://www.geeksforgeeks.org/prefix-sum-array-implementation-applications-competitive-programming/#prefix-sum-implementation"><img src="https://github.com/user-attachments/assets/17fbed8a-8524-4b0d-8cc3-b9a0a426e548"></a>
+
+```java
+
+public class Main
+// prefix sum
+{
+	public static void main(String[] args) {
+		int arr[] = {2,8,3,9,6,5,4};
+		// equilibrium point question array
+		int equ[] = {3,4,8,-9,20,6};
+// 		int len = arr.length;
+// 		brute(arr,len);
+// 		efficient(arr,len);
+		boolean bruteans = eqbrute(equ);
+		System.out.println(bruteans);
+		boolean efficientans = eqeff(equ);
+		System.out.println(efficientans);
+	}
+	
+	public static void brute(int[] arr,int len)
+	{
+	    int left = 0;int right = 2;
+	    int sum = 0;
+	    for(int i = left;i<=right;i++)
+	    {
+	        sum = sum + arr[i];
+	    }
+	    System.out.print(sum+" "); // 13 - (0,2)
+	                               // 20 - (1,3)
+	                           
+	}
+	
+	// prefix sum
+	public static void efficient(int[] arr,int len)
+	{   
+	    
+	    int[] prefixsum = new int[len];
+	    prefixsum[0] = arr[0];
+	    
+	    for (int i = 1;i<len;i++){
+	        prefixsum[i] = prefixsum[i - 1] + arr[i];
+	    }
+	    for (int i = 0;i<len;i++){
+	        System.out.print(prefixsum[i]+" "); // 2 10 13 22 28 37 
+	    }
+	}
+	
+	/*
+	getsum from prefixsum
+	if the getsum is obtained from given ranges => (1,3) means 22 - 2 = 20;
+	
+	public int getsum(int[] prefixsum,int l,int r)
+	{
+	    if(prefixsum[l] != 0){
+	        return prefixsum[r] - prefixsum[l - 1];
+	    }
+	    
+	    return prefixsum[r];
+	    
+	}
+	*/
+	
+	// given an array of integer find if it is a equilibrium point.
+	public static boolean eqbrute(int[] eq){
+	    for(int i = 0;i<eq.length;i++){
+	        int lsum = 0,rsum = 0;
+	        for(int j = 0;j<i;j++){ //i = 0 j = 0 // 0
+	                                //i = 1 j = 1 // 3
+	                                //i=2 j=2 //7
+	                                //i=3 j=3 //12 
+	                                //i=4 j =4 // 6
+                lsum = lsum + eq[j];	            
+	        }
+	        
+	        for(int k = i + 1;k<eq.length;k++){
+	            rsum = rsum + eq[k];//i=0 k =i+1 // 29
+	                                //i =1 k = i+1 // 25
+	                                //i=2 k=i+1 // 17
+	                                //i=3 k = i+1 // 26
+	                                //i = 4 k = i+1 = 6
+	                             
+	        }
+	        if(lsum == rsum){
+	            return true;
+	        }
+	    }
+	    return false;
+	}
+	public static boolean eqeff(int[] eq){
+	    int sum = 0;
+	    for (int i = 0;i<eq.length;i++){
+	        sum = sum + arr[i];//32
+	    } 
+	    
+	    int lsum =0;
+	    for (int i = 0;i<eq.length;i++){
+	        if(lsum == sum-arr[i]){
+	            return true;
+	        }
+	        lsum = lsum + arr[i];
+	        sum = sum - arr[i];
+	    } 
+	    return false;
+	}
+	//i=0 => 0==29 false lsum=3 
+	//i=1 => 3==24 false lsum=7
+	//i=2 => 7==17 false lsum=15
+	//i=3 => 15==26 false lsum=6
+	//i=4 => 6 == 6 true  return true;
+}
+```
+<br/>
+
 <h1>Binary Search</h1>
 <h3>Introduction</h3>
 <a href="https://youtu.be/MHf6awe89xw"><img src="https://github.com/user-attachments/assets/02410bb3-8cd9-428c-81dd-dc6d47abe6c5"/></a>
