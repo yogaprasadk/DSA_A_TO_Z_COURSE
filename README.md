@@ -1758,7 +1758,8 @@ public class Main
 		boolean ans = efficient(arr,target,len);
 		System.out.println(ans);
 	}
-	
+
+	O(n2)
 	public static boolean brute(int[] arr,int x,int len){
 	
 	for (int i = 0;i<len - 1;i++){
@@ -1770,7 +1771,7 @@ public class Main
 	} 
     return false;
 	}
-	
+	//O(n)
 	public static boolean efficient(int[] arr,int x,int len){
 	       int i = 0;
 	       int j = len - 1;
@@ -1810,7 +1811,8 @@ public class Main
 		boolean efficientans = eqeff(equ);
 		System.out.println(efficientans);
 	}
-	
+
+	O(n)
 	public static void brute(int[] arr,int len)
 	{
 	    int left = 0;int right = 2;
@@ -1827,7 +1829,7 @@ public class Main
 	// prefix sum
 	public static void efficient(int[] arr,int len)
 	{   
-	    
+	   	O(n) 
 	    int[] prefixsum = new int[len];
 	    prefixsum[0] = arr[0];
 	    
@@ -1842,7 +1844,8 @@ public class Main
 	/*
 	getsum from prefixsum
 	if the getsum is obtained from given ranges => (1,3) means 22 - 2 = 20;
-	
+
+	O(1)
 	public int getsum(int[] prefixsum,int l,int r)
 	{
 	    if(prefixsum[l] != 0){
@@ -1855,6 +1858,7 @@ public class Main
 	*/
 	
 	// given an array of integer find if it is a equilibrium point.
+	//O(n2)
 	public static boolean eqbrute(int[] eq){
 	    for(int i = 0;i<eq.length;i++){
 	        int lsum = 0,rsum = 0;
@@ -1880,6 +1884,7 @@ public class Main
 	    }
 	    return false;
 	}
+	//O(n)
 	public static boolean eqeff(int[] eq){
 	    int sum = 0;
 	    for (int i = 0;i<eq.length;i++){
