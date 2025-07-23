@@ -9,8 +9,9 @@ public class Countprime {
     public static void main(String[] args) {
         System.out.print("Enter N:");
         int N = S.nextInt();
-        int ans = optimal(N);
-        System.out.println(ans);
+        brute(N);
+//        int ans = optimal(N);
+//        System.out.println(ans);
     }
 
     public static void brute(int n){

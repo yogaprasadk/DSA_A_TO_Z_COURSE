@@ -33,5 +33,5 @@ public class Sieveoferatothenesis {
         return count;
     }
 }
-// Time Complexity: O(Log Log N)
+// Time Complexity: O(N*Log LogN)
 // Space Complexity: O(N)

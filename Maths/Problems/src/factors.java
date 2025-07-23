@@ -1,4 +1,5 @@
 import java.util.*;
+
 public class factors {
     static Scanner S = new Scanner(System.in);
 

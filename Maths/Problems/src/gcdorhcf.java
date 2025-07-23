@@ -6,6 +6,7 @@ public class gcdorhcf {
         int a = 24;
         int b = 12;
         int c =1;
+        //TC O(MIN(a,b))
         for (int i = 1;i<=a&&i<=b;i++){
             if(a%i==0 && b%i==0){
                 c=i;
@@ -13,4 +14,5 @@ public class gcdorhcf {
         }
         System.out.println(c);
     }
+    // For optimal use Euclidean algorithm - O(Log(MIN(a,b))
 }

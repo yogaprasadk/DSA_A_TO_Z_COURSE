@@ -10,6 +10,7 @@ public class Euclideanalgorithm {
         System.out.println(gcdorhcf(A,B));
     }
 
+    // TC: O(log(min(a, b)))
     private static int gcdorhcf(int a, int b) {
         while (a>0&&b>0){
             if(a>b){
@@ -24,4 +25,14 @@ public class Euclideanalgorithm {
         }
         return a;
     }
+    /*
+    short code
+    while (b != 0) {
+    int temp = b;
+    b = a % b;
+    a = temp;
+}
+
+System.out.println(a);
+     */
 }

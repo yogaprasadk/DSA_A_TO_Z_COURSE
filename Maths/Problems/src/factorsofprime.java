@@ -7,7 +7,7 @@ public class factorsofprime {
         System.out.print("enter N:");
         int N = S.nextInt();
         brute(N); //Time complexity: O(SQRT(N))
-        optimal(N);
+        optimal(N); // Time Complexity: O(SQRT(N)
         better(N); // Time complexity: O(SQRT(N))
         return ;
     }

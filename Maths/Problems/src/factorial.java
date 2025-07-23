@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class factorial {
+    // gfg - https://www.geeksforgeeks.org/problems/factorial5739/1
     public static void main(String[] args) {
         Scanner S = new Scanner (System.in);
         System.out.print("Enter N: ");

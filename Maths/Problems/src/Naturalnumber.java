@@ -7,8 +7,8 @@ public class Naturalnumber {
         int n = sc.nextInt();
         System.out.print("Natural Numbers are: ");
         for (int i = 1; i <= n; i++) {
-            System.out.print(i+" ");
+            System.out.print(i + " ");
         }
-        return ;
+        return;
     }
 }
