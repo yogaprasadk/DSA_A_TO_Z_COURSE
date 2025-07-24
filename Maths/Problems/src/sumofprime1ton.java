@@ -70,12 +70,12 @@ public class sumofprime1ton {
                 }
             }
         }
-        int count = 0;
+        int sum = 0;
         for (int i = 2; i <=n; i++) {  // check upto N
             if(!composite[i]){ // false
-                count = count+ i;
+                sum = sum + i;
             }
         }
-        return count;
+        return sum;
     }
 }

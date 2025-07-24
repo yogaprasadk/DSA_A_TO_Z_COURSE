@@ -9,10 +9,9 @@ public class Perfectsquare {
         int N = S.nextInt();
         System.out.println(validsquare(N));
     }
-
+    // Time Complexity - O(N)
     private static boolean validsquare(int n) {
-        int sum = 0;
-        for (int i = 1; i <n/2; i++) {
+                for (int i = 1; i <n/2; i++) {
             if(i*i == n){
                 return true;
             }
