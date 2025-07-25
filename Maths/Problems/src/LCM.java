@@ -1,5 +1,5 @@
 import java.util.*;
-// gfg -
+// gfg -https://www.geeksforgeeks.org/problems/lcm-of-two-numbers/1
 public class LCM {
     static Scanner sc = new Scanner(System.in);
     /*

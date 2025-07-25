@@ -1,6 +1,6 @@
 public class Disariumnumber {
 
-    // gfg -->
+    // gfg --> https://www.geeksforgeeks.org/problems/disarium-number1045/1
     public static void main(String[] args) {
         int N = 89;
         int dup = N;
