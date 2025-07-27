@@ -1,0 +1,20 @@
+left shift - <<
+
+1010 left shift 1 --> 10100
+
+now multiple with base 2 with powers
+1*2^4 + 0*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 18
+
+general point => a<<b = a*2^b
+
+right shift - >>
+
+1010 right shift 1 ==> 101
+
+now here 0 will be get ignored
+
+general point -> a>>b = a/2^b
+
+
+
+

@@ -1,0 +1,19 @@
+decimalnumber = 6
+
+convert it to binary
+int ans = 0;
+int pow  = 1;
+
+int rem = 0;
+while(decimalnumber>0){
+      rem = decimalnumber%2; //  if need to convert change(what base you need) to octal - 8,hexadecimal - 16,binary = 2;
+      decimalnumber = decimalnumber/2; // if need to convert change(what base you need) to octal - 8,hexadecimal - 16,binary = 2;
+      ans = ans + (rem*pow);
+      pow = pow * 10;
+}
+
+print(ans);
+
+
+to print binary value 1 to N
+for
