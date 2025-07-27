@@ -1,12 +1,17 @@
 import java.util.Scanner;
+// refer these articles
 
+/*
+https://takeuforward.org/strivers-a2z-dsa-course/must-do-pattern-problems-before-starting-dsa/
+https://justwritecode.in/25-star-pattern-printing-in-java-every-beginner-should-know%e2%9a%a1/#2091
+ */
 public class Pattern {
     static Scanner S = new Scanner(System.in);
 
     public static void main(String[] args) {
         System.out.print("Enter N:");
         int N = S.nextInt();
-        pattern22(N);
+        pattern30(N);
     }
     //1.Rectangular Star Pattern
     public static void pattern1(int n) {
@@ -374,5 +379,148 @@ public class Pattern {
             System.out.println();
         }
     }
+    
+    // K Pattern
+    public static void pattern23(int n){
+        for(int i = 1;i<=n;i++){
+            for (int j = i; j <= n ; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        for(int i = 2;i<=n;i++){
+            for (int j = 1; j <= i ; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
 
+    // Palindrome Pattern
+    public static void pattern24(int n){
+        for (int i = 1; i<=n ; i++) {
+            //spaces
+            for(int j=i;j<=n;j++){
+                System.out.print("  ");
+            }
+            //number
+            for (int j = i; j >1; j--) {
+                System.out.print(j+" ");
+            }
+            //number
+            for (int j = 1; j <= i ; j++) {
+                System.out.print(j+" ");
+            }
+            System.out.println();
+        }
+    }
+    // Rhombus Pattern
+    public static void pattern25(int n){
+        for (int i = 1; i <=n ; i++) {
+            for (int j = i; j <n ; j++) {
+                System.out.print("  ");
+            }
+            for (int j = 1; j <=n ; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
+    // Mirror Image triangle Pattern
+    public static void pattern26(int n){
+
+        for (int i = 1; i <n ; i++) {
+            // spaces
+            for (int j = 1; j <i ; j++) {
+                System.out.print(" ");
+            }
+
+            for (int j = i; j <=n ; j++) {
+                System.out.print(j+" ");
+            }
+            System.out.println();
+        }
+
+        for (int i = n; i >= 1; i--) {
+            for(int j = i-1;j>=1;j--){
+                System.out.print(" ");
+            }
+
+            for (int j = i; j <=n ; j++) {
+                System.out.print(j+" ");
+            }
+            System.out.println();
+        }
+    }
+
+    // Hollow Triangle Pattern
+    public static void pattern27(int n){
+        for (int i = 1; i <= n ; i++) {
+            for (int j = 1; j <n; j++) {
+                if(i==n||i==j&&i>n/2||i+j==n&&j<=n/2){
+                    System.out.print("* ");
+                }
+                else {
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
+    }
+
+    // X Pattern
+    public static void pattern28(int n){
+        for (int i = 1; i <= n ; i++) {
+            for (int j = 1; j <=n ; j++) {
+                if(i==j|| i+j==n+1){
+                    System.out.print("* ");
+                }
+                else {
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
+    }
+
+    // Hollow Hourglass Pattern
+    public static void pattern29(int n){
+        for (int i = 1; i <=n ; i++) {
+            for (int j = 1; j <=n ; j++) {
+                if(i==1||i==j||i==n||i+j==n+1){
+                    System.out.print("* ");
+                }
+                else{
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
+    }
+    // hollow diamond pattern
+    public static void pattern30(int n){
+        for (int i = 0; i <n ; i++) {
+            for (int j = 0; j < n; j++) {
+                if (i==j&&i>=n/2||i+j==n-1&&i>=n/2){
+                    System.out.print("* ");
+                }
+                else {
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                if (i==j&&i<=n/2||i+j==n-1&&i<=n/2){
+                    System.out.print("* ");
+                }
+                else {
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
+    }
 }
