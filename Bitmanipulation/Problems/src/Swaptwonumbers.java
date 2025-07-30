@@ -19,7 +19,19 @@ public class Swaptwonumbers {
         System.out.print("Swap: "+a +" "+b);
     }*/
 
-    //without using third variable
+
+    /*
+    //without using third variable - XOR
+    private static void swap(int a, int b) {
+        a = a+b; //
+        b = a-b; //
+        a = a-b; //
+        System.out.print("Swap: "+a +" "+b);
+    }
+     */
+
+
+    //without using third variable - XOR
     private static void swap(int a, int b) {
         a = a^b; // 1
         b = a^b; // a denotes this -> (a^b) ^ b = a^a ^ b^b = a
