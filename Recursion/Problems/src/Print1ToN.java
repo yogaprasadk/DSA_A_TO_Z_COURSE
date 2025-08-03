@@ -13,7 +13,6 @@ public class Print1ToN {
         if(N < 1){
             return;
         }
-
         display(N-1);// 9
         System.out.print(N+" ");
     }

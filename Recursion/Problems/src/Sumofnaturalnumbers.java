@@ -14,5 +14,4 @@ public class Sumofnaturalnumbers {
         int N  = S.nextInt();
         System.out.print(findsum(N));
     }
-
 }
