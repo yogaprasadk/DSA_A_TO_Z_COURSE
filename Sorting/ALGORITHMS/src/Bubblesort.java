@@ -1,6 +1,8 @@
 import java.util.Arrays;
 import java.util.Scanner;
-
+// GFG - https://www.geeksforgeeks.org/problems/bubble-sort/1
+// TC: O(N2)
+// AS OR SC: O(1)
 public class Bubblesort {
     static Scanner S = new Scanner(System.in);
 
