@@ -96,7 +96,7 @@ public class Mergesort {
             arr[start++] = leftarray[i++];
         }
 
-        while (i<rightarray.length){
+        while (j<rightarray.length){
             arr[start++] = rightarray[j++];
         }
     }
