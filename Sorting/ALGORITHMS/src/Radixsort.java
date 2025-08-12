@@ -38,7 +38,7 @@ public class Radixsort {
         it is base 10 values sorted it becomes 08,29,36,471,83,91
         it is base 100 values sorted it becomes 08,029,036,083,091,4
          */
-        int n = size;
+
         int max = Arrays.stream(arr).max().getAsInt();
         for(int exp = 1;max/exp > 0;exp*=10){
             Count(arr,exp);

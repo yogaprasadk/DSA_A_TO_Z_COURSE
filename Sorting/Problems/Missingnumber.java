@@ -16,6 +16,7 @@ public class Missingnumber {
         // The Sorting ALgorithm that i used here is Cyclic sort
         // Here every element will be at it is own index
 
+        
         // how to find the cor rect answer: Start searching from the start index and the element that is not present in that correct index.that is your answer
 
         int ans = Cyclicsort(nums);
