@@ -1,4 +1,4 @@
-package classobject;
+package classobject.car;
 
 public class Carcompany {
     String name;
