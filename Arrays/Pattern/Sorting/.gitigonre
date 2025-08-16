@@ -1,0 +1,11 @@
+# Ignore all folders named 'build', 'dist', and 'out'
+build/
+dist/
+out/
+# Ignore all files in any .idea or .vscode folder
+.idea/
+.vscode/
+Main.java/
+# Ignore OS and IDE specific folders
+.DS_Store
+Thumbs.db

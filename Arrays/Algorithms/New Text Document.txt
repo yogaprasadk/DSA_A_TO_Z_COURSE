@@ -1,0 +1,5 @@
+This image describes key indicators for identifying problems that can be solved using the Two-Pointer Technique in algorithms:
+Scenarios:
+Look for problems requiring iteration through an array with two pointers, often starting from different ends or positions, to compare or manipulate elements simultaneously.
+Clue:
+Problem descriptions mentioning a sorted array or the need to compare elements from both ends of an array are strong indicators for this technique.
