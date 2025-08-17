@@ -1,4 +1,4 @@
-package classobject.Bike;
+package Bike;
 public class Bike {
     String name;
     String color;

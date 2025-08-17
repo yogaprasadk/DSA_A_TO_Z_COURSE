@@ -1,4 +1,4 @@
-package classobject.Person;
+package Person;
 
 public class Persondetails {
     public static void main(String[] args) {

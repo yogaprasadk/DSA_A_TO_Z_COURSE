@@ -10,7 +10,7 @@ public class Hashmap{
         ans.put("Rio", 13);
         System.out.println(ans);
 
-        // get
-        // System.out.println(ans.get(1));
+
+        //
     }
 }

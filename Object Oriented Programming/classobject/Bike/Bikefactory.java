@@ -1,4 +1,4 @@
-package classobject.Bike;
+package Bike;
 
 public class Bikefactory {
     public static void main(String[] args) {

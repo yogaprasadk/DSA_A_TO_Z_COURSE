@@ -1,4 +1,4 @@
-package classobject.Person;
+package Person;
 
 public class Person {
     String name;
@@ -23,7 +23,7 @@ public class Person {
         sleep();
         code();
     }
-
+ 
     public Person(String name,int age,String city){
         this.name = name;
         this.age = age;
