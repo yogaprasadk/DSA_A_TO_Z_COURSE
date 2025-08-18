@@ -64,7 +64,7 @@ public class Countduplicates {
      * HashSet<Integer> seen = new HashSet<>();
      * for (int num : arr) {
      * if (seen.contains(num)) {
-     * return true; // Duplicate found
+     *    return true; // Duplicate found
      * }
      * seen.add(num);
      * }
