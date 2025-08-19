@@ -1,6 +1,5 @@
 package Person;
-
-public class Person {
+public class Persons {
     String name;
     int age;    
     static String Language = "English";
@@ -24,7 +23,7 @@ public class Person {
         code();
     }
  
-    public Person(String name,int age,String city){
+    public Persons(String name,int age,String city){
         this.name = name;
         this.age = age;
         this.city = city;

@@ -10,6 +10,6 @@ public class index {
 
     public String aa = "Rajni";
     protected String bb = "Pooja";
-    private String cc = "Rana";
+     private String cc = "Rana";
     String dd = "Anushka"; 
 }

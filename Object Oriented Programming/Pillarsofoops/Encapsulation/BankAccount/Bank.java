@@ -19,22 +19,6 @@ public class Bank {
 
         yogaAccount.setContactNumber(902345612L);
         System.out.println("Accout Number: "+yogaAccount.getContactNumber());
-
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
         
         
         S.close();
