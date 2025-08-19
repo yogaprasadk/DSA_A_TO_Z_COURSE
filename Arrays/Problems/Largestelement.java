@@ -1,5 +1,3 @@
-package Problems;
-
 public class Largestelement {
     // GFG = https://www.geeksforgeeks.org/problems/largest-element-in-array4009/1
     public static void main(String args[]){

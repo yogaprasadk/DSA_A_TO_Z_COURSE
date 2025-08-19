@@ -1,4 +1,4 @@
-package Problems;
+// package Problems;
 
 public class Smallestelement {
     public static void main(String args[]){

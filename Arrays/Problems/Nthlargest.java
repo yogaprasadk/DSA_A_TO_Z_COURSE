@@ -1,4 +1,4 @@
-package Problems;
+// package Problems;
 
 import java.util.*;
 // Leetcode - https://leetcode.com/problems/kth-largest-element-in-an-array/description/
@@ -9,14 +9,22 @@ public class Nthlargest {
         System.out.print("Enter K Size: ");
         int k = S.nextInt();
         System.out.print("Enter Size: ");
-        int size = S.nextInt();
-        int[] arr = new int[size];
+        int arrSize = S.nextInt();
+
+        if(arrSize <= 0){
+            System.out.println("Array size must be greater than 0.");
+                return;
+        }
+
+        int[] arr = new int[arrSize];
         System.out.print("Enter Array Elements: ");
         for (int index = 0; index < arr.length; index++) {
             arr[index] = S.nextInt();
         }
+
         int ans = Klargest(arr,k);
         System.out.println(ans);
+        S.close();
     }
 
     // TC - O(N LOGN) SC - O(1)
@@ -25,7 +33,7 @@ public class Nthlargest {
         return arr[arr.length - k];
     }
 
-    // TC - O(N LogK)
+    // TC - O(N LogK) SC - O(N)
     /*
         PriorityQueue<Integer> minHeap = new PriorityHeap<>(k+1);
         for(int i : nums){
@@ -38,7 +46,27 @@ public class Nthlargest {
         return minHeap.poll();
      */
 
-     // TC - O(N)
+     // TC - O(N) 
      // Quickselect ALgorithm
+     /*
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+      */
        
 }
