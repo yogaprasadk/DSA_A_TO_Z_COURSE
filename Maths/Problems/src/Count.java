@@ -10,6 +10,7 @@ public class Count {
         System.out.println(ans);
     }
 
+    // ignore 0
     private static int count(int n) {
         int countnum = 0;
         int dup = n;
@@ -22,4 +23,11 @@ public class Count {
         }
         return countnum;
     }
+
+    // normal count of digits in one line
+    /*
+    int count  = (int) + Log10(n) + 1;
+     
+    */
+    
 }
