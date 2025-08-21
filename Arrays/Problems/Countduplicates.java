@@ -1,11 +1,7 @@
-
-
 import java.util.*;
-
 // Leetcode - https://leetcode.com/problems/contains-duplicate/
 public class Countduplicates {
     static Scanner S = new Scanner(System.in);
-
     public static void main(String[] args) {
         System.out.print("Enter Size: ");
         int size = S.nextInt();
