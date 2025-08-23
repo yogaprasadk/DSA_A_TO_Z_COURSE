@@ -15,7 +15,7 @@ public class Rotation {
 
             if (K <= 0) {
                 System.out.println("Enter K greater than 0");
-            return;
+                return;
             }
 
             System.out.print("Enter Array Size: ");
