@@ -18,9 +18,11 @@ public class twooddoccurences {
     private static ArrayList<Integer> twoOddNum(int[] arr) {
         ArrayList<Integer> ans = new ArrayList<>();
 
-        for (int i = 0; i <= arr.length-1 ; i++) {
+        // for (int i = 0; i <= arr.length-1 ; i++) {
             
-        }
+        // }
+
+        return ans;
     }
 
 }

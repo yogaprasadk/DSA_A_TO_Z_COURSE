@@ -3,7 +3,7 @@ package QuickSelectAlgorithm;
 /*
  * For Kth Smallest in Sorted Array - arr[k-1]  O(1)
  * For Kth Largest  in Sorted Array - arr[arr.length - K] O(1)
- * For Kth Smallest / Largest in Unsorted Array - QuickSelect Algorithm O(n) Or Sort +    index - O(n Logn) 
+ * For Kth Smallest / Largest in Unsorted Array - QuickSelect Algorithm O(n) Or Sort +index - O(n Logn) 
  */
 
 import java.util.*;

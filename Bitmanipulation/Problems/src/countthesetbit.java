@@ -6,7 +6,7 @@ public class countthesetbit {
     public static void main(String[] args) {
         System.out.print("Enter N:");
         int N = S.nextInt();
-
+        System.out.println(setbitcount(N));
     }
 
     // Brute Force solution

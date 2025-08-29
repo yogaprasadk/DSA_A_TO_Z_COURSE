@@ -9,7 +9,7 @@ class conversion{
         }
     }
 
-    public static int decimaltoanybase(int n){
+    public static int decimaltoanybase(int decimalnumber){
         int ans = 0;
         int pow  = 1;
         int rem = 0;
@@ -19,10 +19,11 @@ class conversion{
             ans = ans + (rem*pow);
             pow = pow * 10;
         }
+        return ans;
     }
 
     // to print binary value from 1 to N
-    public static int range(int n){
+    public static int range(int decimalnumber){
         int ans = 0;
         int pow  = 1;
         int rem = 0;
@@ -32,5 +33,7 @@ class conversion{
             ans = ans + (rem*pow);
             pow = pow * 10;
         }
+
+        return ans;
     }
 }

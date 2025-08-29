@@ -8,7 +8,7 @@ public class factorial {
         System.out.println(factorial(n));
     }
 
-   static int factorial(int n) {
+   public static int factorial(int n) {
     // code here
     if(n==0){
         return 1;
