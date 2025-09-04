@@ -1,0 +1,14 @@
+With respect ot class we can achieve 0 to 100% of abstraction.abstract class can contain
+non static methods with body which reduces percentage of abstraction.
+TO overcome this we can go for interface by using interface we can achieve 100% of abstraction.
+
+Points to remember:
+-> we cannot create object of abstract class
+-> static methods are not eligible for abstraction as we cannot override them
+-> abstarct class cAN contain MAIN method and we can execute it.
+-> abstract class allows non static methods with body which reduces abstraction percentage
+-> static and abstract cannot used together
+
+Private and abstract cannot be used together why?.
+
+Because 

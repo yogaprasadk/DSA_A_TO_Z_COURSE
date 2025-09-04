@@ -1,0 +1,36 @@
+Interface is a java component similar to class it provides 100% of abstraction and multiple inheritance.
+
+Characteristics of Interface
+-> Interface doesnot allows non static methods with body hence we can allow 100% of abstraction
+
+->Interface doesnot allows constructor hence we can achieve mulitple inheritance.
+
+-> Interface allows static methods with body to make functional.
+
+-> We cannot create objects for Interface.
+
+-> All Variables are by default public static final.
+
+-> All methods in interface are by default public and abstract.
+
+Inheritance with respect to interface:-
+Interface to Interface we can use extends here for inheritance.
+
+-> interface to class inheritance is possible using implements keyword
+-> class to Interface is not possible in inheritance 
+
+-> class and interface Inheritance to clas is possible but first we should inherit but first we should inherit class using extends and after we will using interface to implements.
+
+    class A{
+        public void display(){
+            System.out.print("display");
+        }
+    }
+    interface B{
+        void print();
+    }
+    class C extends A implements B{
+        public void print(){
+        System.out.print("display").
+        }
+    }

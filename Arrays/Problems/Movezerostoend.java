@@ -75,7 +75,6 @@ public class Movezerostoend {
         }
         }
         while(left<nums.length){
-        
             nums[left++] = 0;
         }
      } 

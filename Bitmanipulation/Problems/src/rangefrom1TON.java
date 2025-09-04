@@ -9,6 +9,7 @@ public class rangefrom1TON {
         brute(N);
         int ans = range(N);
         System.out.println(ans);
+        S.close();
     }
 
     // Brute - O(N)

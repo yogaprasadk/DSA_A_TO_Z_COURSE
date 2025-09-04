@@ -14,10 +14,10 @@ public class threeoccurences {
             arr[i] = S.nextInt();
         }
         System.out.println(singleNumber(arr));
+        S.close();
     }
 
     public static int singleNumber(int[] nums) {
-        int len = nums.length;
         int ones = 0,twos=0;
         for(int i : nums){
             ones = ~twos & (ones ^ i);

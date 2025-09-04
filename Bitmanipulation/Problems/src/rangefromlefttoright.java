@@ -10,6 +10,7 @@ public class rangefromlefttoright {
         int r = S.nextInt();
         //Brute
         brute(l,r);
+        S.close();
     }
 
     private static void brute(int l, int r) {

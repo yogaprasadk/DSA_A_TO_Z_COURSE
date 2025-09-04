@@ -1,7 +1,4 @@
 import java.util.Scanner;
-
-import static java.lang.reflect.Array.set;
-
 public class settherightmostunsetbit {
     static Scanner S = new Scanner(System.in);
 

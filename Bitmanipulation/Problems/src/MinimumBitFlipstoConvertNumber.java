@@ -7,7 +7,6 @@ public class MinimumBitFlipstoConvertNumber {
         int start = S.nextInt();
         System.out.print("Enter goal");
         int goal = S.nextInt();
-        int ans  = start^goal;
         System.out.print(minBitFlips(start,goal));
     }
 
