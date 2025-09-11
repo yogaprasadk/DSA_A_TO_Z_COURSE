@@ -5,7 +5,7 @@
 // 
 
 // refer this article - https://www.geeksforgeeks.org/java/multidimensional-arrays-in-java/
-class TwodArrays {
+class Twodarrays {
     public static void main(String[] args) {
         // static array
         int[][] arr = { { 1, 2 }, { 3, 5 } };
