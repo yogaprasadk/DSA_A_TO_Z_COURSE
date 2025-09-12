@@ -51,4 +51,62 @@ public class SetMatrixZeros {
             }
         }
     }
+
+    /*
+     better solution 
+        public static void SetMatrixZeros (int[][] arr,int m,int n){
+            int[m] row = {0};
+            int[n] col = {0};
+            Time Complexity: O(2*M*N)
+            SC: O(M) + O(N)
+            for(int i = 0;i<m;i++){
+                for(int j = 0;j<n;j++){
+                    if(arr[i][j] == 0){
+                        row[i] = 1;
+                        col[j] = 1;
+                    }
+                }
+            }
+
+            for(int i = 0;i<m;i++){
+            for(int j = 0;j<n;j++){
+                    if(row[i] || col[j]){
+                        arr[i][j] = 0;
+                    }
+                }
+            }
+        }
+    */
+
+    /*
+     optimal solution  
+      boolean firstrow = false, firstcol = false;
+      for(int i = 0;i<arr.length;i++){
+        for(int j = 0;jmarr.length;j++){
+            if(arr[i][j]==0){
+                if(i==0) firstrow = true;
+                if(j==0) firstcol = true;
+            }
+            arr[o][i]  = 0;
+            arr[j][0]  = 0;
+        }
+
+        for(int i = 1;i<arr.length;i++){
+        for(int j = 1;j<arr[0].length;j++{})}{
+        
+            if(arr[i][0] == 0 || arr[0][j] == 0){
+                arr[i][j] = 0;
+            }
+        }
+         
+        if(firstrow){
+            arr[0][j] = 0;
+        }
+        
+        if(firstcol){
+            arr[j][]
+        }
+      }
+     
+     */
 }
