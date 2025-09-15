@@ -2,7 +2,7 @@
 // where each row can represents another individual arrays,
 // 1d arrays is other wise knowna s linear array or vector
 // 2D ARRAYS IS OTHERWISE KNOWN AS TABLES OR MATRIX ...
-// 
+package.Introduction.TwoDimesionarrays;
 
 // refer this article - https://www.geeksforgeeks.org/java/multidimensional-arrays-in-java/
 class Twodarrays {

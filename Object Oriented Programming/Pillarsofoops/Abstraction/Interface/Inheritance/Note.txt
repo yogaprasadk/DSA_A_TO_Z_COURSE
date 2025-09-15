@@ -1,0 +1,15 @@
+in java we can classify interface in to three types
+1.regular interface
+2.functional interface
+3.marker interface
+
+1.regular interface - an interface containing more than one abstract method is called as regular interface
+
+2.functional interface - an interface containing only one abstract method is called as functional interface
+
+readable 
+comparator
+comparable
+3.marker interface - an interface containing no abstract method is called as marker interface. it is mainly to indicate about certain activities
+there are few marker interface present in java.
+we are having built in marker interface such as serializer,clonable

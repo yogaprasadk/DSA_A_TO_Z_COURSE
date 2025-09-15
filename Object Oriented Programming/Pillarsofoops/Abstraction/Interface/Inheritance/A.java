@@ -1,5 +1,3 @@
-package Inheritance;
-
 interface A {
     void display();
 }
